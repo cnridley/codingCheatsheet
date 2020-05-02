@@ -31,6 +31,7 @@
                 <u><i>Basic Structure of the HTML page: </i></u>
                 **    REPLACE "" WITH <>    ** <br>
                 "!DOCTYPE html" <br>
+                Every HTML document has to start with this declaration so that the browser knows that it is an HTML doc. <br><br>
                 "html"<br><br>
                 "head"<br>
                 The head tags contain all the information that the user cannot see i.e. links to external styling pages.<br>
@@ -39,18 +40,32 @@
                 The body tags contain all the information that the user can see. <br>
                 "/body<br><br>
                 "/html<br>
+            </div>
 
+            <div class="row container-fluid leftCol">
+                <u><i>Classes and IDs:</i></u>
+                Classes and IDs are attributes that go within the elements of an HTML page and give them a unique 'name'. They can then be called by the css pages or JS pages to be styled however the web designer wants them to be. <br><br>
 
+                Multiple elements can have the same class name.<br>
+                In the style sheet it is called using the dot notation i.e .ClassName <br>
+                In the JavaScript style sheet it is called using the document.getElementsByClassNames("ClassName"); <br><br>
 
-
-
-
-
+                Only one element can have an ID name, making them more unique<br>
+                In the CSS styling sheet is it called using the pound notation i.e. #IDName<br>
+                In the Javascript style sheet it is called using the document.getElementByID("IDName");
             </div>
         </div>
 
         <!-- This will be a scroll function on left side of page -->
-        <div class="col-md-6">Useful elements and attributes.</div>
+        <div class="col-md-6 rightCol"><u><i>Useful elements and attributes:</i></u><br>
+            There are two different types of elements; semantic or non-semantic.<br><br>
+            Non-semantic elements tell the user nothing about its contents. e.g. div and span.<br>
+            Div elements are block level elements and are used expansively to help layout the website because they can be styled so extensively. i.e. width, height, background color and so on can be added to its style. <br>
+            Span elements are inline elements that are used to isolate a particular content within another element, so that it can be styled seperately. <br><br>
+            Semantic elements have a meaning and tell the user information about its contents.<br>
+
+
+        </div>
 
     </div>
 

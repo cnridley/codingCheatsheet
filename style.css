@@ -152,20 +152,36 @@ footer {
 
 /* CSS PAGE */
 
+.boxModelRow{
+    border: 5px solid purple;
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
 .cssP {
     background-color: #cffffa;
     text-align: center;
     font-size: 17px;
     font-family: 'Roboto Mono', monospace;
     margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .boxModel {
     max-height: 300px;
     max-width: 450px;
-    margin-right: auto;
 }
 
+.imgDiv {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+
+}
 
 
 

@@ -19,12 +19,66 @@
     It defines how elements are displayed on a page. CSS is stored in an external file, usually called "style.css".<br>
     In order for it to work, it has to be linked on all HTML pages using the link tag with an href to the file. The link tag goes in the head element so that the user cannot see it.
     </div>
-    <div class="row">
-        <div class="col-md-6"><img src="images/css_box_model_chrome.png" class="boxModel"></div>
-        <div class="col-md-6">The Box Model:</div>
+    <div class="row container-fluid boxModelRow">
+        <div class="col-md-6 imgDiv">The Box Model:<br>
+            <img src="images/css_box_model_chrome.png"  class="boxModel"></div>
+        <div class="col-md-6 imgDiv">
+            All HTML elements can be essentially viewed as a box.<br>
+            The Box Model consists of four different levels: <br><br>
+            The Content - What is viewed by the user. I.e. Images or text.<br><br>
+            Padding - Clears an area around the content and border. Imagine the padding in a coat when styling this.<br><br>
+            Border - This can be seen by the user, it is styled in the CSS file. <br><br>
+            The margin - The space outside the box, which is inbetween each element. <br><br>
+            Box sizing:<br>
+            Controls whether the padding and border should be included in the overall size of the element.<br><br>
+            Box-size: border-box; tells browser to include padding and border in overall size of element. <br><br>
+            Content-box; default value. Keeps padding and border out of total size of element.
 
+        </div>
+    </div>
+    <div class="row boxModelRow imgDiv">
+        THE DISPLAY PROPERTY:<br><br>
+        The display property is the most important CSS styling rule to control the layout of the website. <br>
+        Each element has a default display which is either:<br>
+        Block (takes up the full width available). e.g. Div, footers, p tags, sections.<br>
+        Inline (takes up only the amount of space that is needed and does not start a new line). e.g. Span.<br><br>
+        Other display properties you can use are:<br>
+        'Flex' -  Displays an element as a block-level flex container.<br>
+        'inline-block' - Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values.<br>
+        'inline-flex' - Displays an element as an inline-level flex container.<br>
+        'none' - Removes element completely. This is useful for javascript functions.
     </div>
 
+    <div class="row boxModelRow imgDiv">
+    OTHER USEFUL CSS:<br><br>
+    Order of css rules is:<br>
+    !important <br>
+    ID selector (#) <br>
+    Class selector (.) <br>
+    Type selector <br>
+    Css is read from top to bottom by the browser.<br><br>
+
+        Units of measurements:<br>
+        Pixels <br>
+        Em <br>
+        Rem <br>
+        Percentage <br>
+        Vw (viewport width) eg. Height: 10vw; box will have height of 10% of window. <br>
+        Vh (viewport height) - relative to height of viewport which is the browser viewport size. <br><br>
+
+        Centering:<br>
+        Places content centered horizontally or vertically on a page. <br>
+        To centre horizontally - set value to auto for left and right margin.<br><br>
+        To centre inline-block elements - add text align property to the parent of the inline block. <br><br>
+        For absolute positioned elements - set the left and right property as well as the auto property for margin-left and margin-right. <br><br>
+        For vertical centering- transform:translate(y)(-50%); - will move the element on the y-axis. <br><br>
+
+        The transition property:<br>
+        The transition property allows you to trigger a style change to an element. <br>
+        The most popular one is :hover. <br>
+        This sets a style to the element when the user hovers over the particular element.
+
+    </div>
 
 
     <footer class="container-fluid">

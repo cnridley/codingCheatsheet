@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container-fluid header"><p class="heading">Coding Cheatsheet <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p></div>
+    <div class="container-fluid header"><p class="heading"><a href="index.html">HTML Cheatsheet</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p></div>
     
     <div class="row">
         <div class="col htmlP">HTML is the structure of the web.<br> Every website is made up of HTML pages, which is solely made up of elements and attributes which can be manipulated and changed to the developers design.</div>
@@ -20,7 +20,7 @@
     <!-- entire page will be in the same row -->
     <div class="row">
         <!-- will make rows within the parent row -->
-        <div class="col-md-6 ">
+        <div class="col-md-6 left">
             <div class="row container-fluid leftCol"><u><i>Choosing a text editor:</i></u>
             A text editor is what is used to write out the code.<br>
             There are plenty to choose from on the web,  and looking between them all can take months.<br>
@@ -57,12 +57,34 @@
         </div>
 
         <!-- This will be a scroll function on left side of page -->
-        <div class="col-md-6 rightCol"><u><i>Useful elements and attributes:</i></u><br>
+        <div class="col-md-6 container rightCol"><u><i>Useful elements and attributes:</i></u><br>
             There are two different types of elements; semantic or non-semantic.<br><br>
-            Non-semantic elements tell the user nothing about its contents. e.g. div and span.<br>
-            Div elements are block level elements and are used expansively to help layout the website because they can be styled so extensively. i.e. width, height, background color and so on can be added to its style. <br>
+            Non-semantic elements tell the user nothing about its contents. e.g. div and span.<br><br>
+            Div elements are block level elements and are used expansively to help layout the website because they can be styled so extensively. i.e. width, height, background color and so on can be added to its style. <br><br>
             Span elements are inline elements that are used to isolate a particular content within another element, so that it can be styled seperately. <br><br>
-            Semantic elements have a meaning and tell the user information about its contents.<br>
+            Semantic elements have a meaning and tell the user information about its contents:<br><br>
+
+            < a > - creates a hyperlink to other pages, files, locations within the same page,  emails etc. <br>
+
+            < ul > - unordered list.<br>
+
+            < ol > - ordered list. <br>
+
+            < li > - list item. Child of ul or ol<br>
+
+            < img > - image tag.  An empty element, it has no closing tag.  Has to include the src attribute.  Recommended to include the alt attribute. <br><br>
+
+            Some useful attributes are:<br><br>
+
+                href = #name - the section with the id = “name”.  href attributes go inside the anchor tags!<br>
+
+                href = URL - a new webpage. href attributes go inside the anchor tags!<br>
+
+                Target = _blank - to open the links in a new browser. Goes inside anchor tag. <br>
+
+                src=”image pathway” - tells the browser where to find the image. Goes inside the img tag. <br>
+
+                Alt=”descriptive text for image” - used in case the image link is broken.<br>
 
 
         </div>

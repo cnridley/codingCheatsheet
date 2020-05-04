@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="/JS.html">JavaScript Basics</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+
+        <div class="row container-fluid comments">
+        <p class="title">JS Comments:</p>
+        Similar to CSS and HTML, you can write comments within the code of JS which will not be displayed by the browser. It will just be regarded as whitespace and ignored. It is useful to use to make notes on the code for later use and for other developers who may be looking at the code. <br> <br>
+        <pre>//This is a single line comment<br><br>
+        /* This is a
+        multi
+        line
+        comment */
+        </pre>
+        </div>
+
+        <div class="row container-fluid comments">
+            <p class="title">JS declarations:</p>
+            JS is made up of variables which are assigned different meanings/values/data.<br>
+            There are three ways of declaring a variable. Each using a different JS reserved keywords. <br><br>
+            1. var<br>
+            This is the most common form of declaring a variable, and can be used to define both a local and global scope variable.<br>
+            <pre>var x = 27;</pre><br>
+            2.let <br>
+            Declares a block scope, local variable.<br>
+            <pre>let y = 302;</pre><br>
+            3. const<br>
+            Creates a variable that cannot be changed or altered within the code<br>
+            <pre>const c = "This variable will always be this"</pre><br><br>
+            Variables are declared using the '=' operator with a semi-colon at the end.<br>
+            If it is not declared it will be 'undefined' until it is declared later on.<br>
+            <pre>var x;
+            console.log(x) // undefined.
+            </pre>
+        </div>
+
+        <div class="row container-fluid comments">
+            <p class="title">JS Datatypes</p>
+            <div class="row datatypes container">
+            1. Strings <br>
+            Strings are a series of characters that are surrounded around either single quotations '' or double quotations "".<br>
+            The type of quotations does not matter, as long as they match at the end.<br>
+            <pre class="container-fluid">var string = "This is a string";<br>
+            var string2 = "The developer said, 'Try using bootstrap to make your wesbite mobile responsive'";
+            </pre>
+            In string2, if single qotations were used at the beginning and end it would cut of the string after 'the developer said,'
+            </div>
+
+            <div class="row datatypes container">
+            2. Booleans<br>
+            A value that is either true or false. It's as simple as that.<br>
+            They have no quotations around them because if they did they would be strings.<br>
+            <pre>var happy = true;
+            var unhappy = false;
+            </pre>
+            </div>
+
+            <div class="row datatypes container">
+            3. Numbers<br>
+            A numerical value with up to 15 digits. <br>
+            Again, it is not surrounded by quotations otherwise it would a string.<br>
+            It cannot contain fractions but can contain decimals.<br>
+            <pre>
+            var number = 329210;
+            </pre>
+            </div>
+
+            <div class="row datatypes container">
+            4. Undefined and null <br>
+            Undefined variables have been declared but have not been assigned a value.
+                <pre>
+                var undefined;
+                </pre>
+                Null variables have been assigned a value, but that value is intentionally set as null. i.e it is a value that represents nothing.
+                <pre>
+                var nullValue = null;
+                </pre>
+            </div>
+
+            <div class="row datatypes container">
+                5. Objects<br>
+                Objects are made up of key/value pairs. They are declared using the '=' operator, and wrapped around {}.
+                <pre>
+                var myself = {
+                    firstName: 'Chloe',
+                    lastName: 'Ridley',
+                    age: 27,
+                };
+                </pre>
+                In the abover example, the 'myself' is the object. 'firstName' is the key, and 'chloe' is the value.<br>
+                More information on objects is in the 'objects' tab in the 'Javascript cheatsheet' page.
+            </div>
+
+            <div class="row datatypes container">
+            6. Arrays<br>
+                Arrays store multiple values in the same variable. <br>
+                Arrays can store different data types with the same variable.<br>
+                The contents are wrapped around [] and seperated with a comma ','.
+                <pre>
+                var dataTypes = ['strings' , 'Numbers' , 'booleans' , 'undefined' , 'null' , 'objects' , 'arrays'];
+                </pre>
+                More information on arrays is on the 'arrays' tab in the 'Javascript cheatsheet' page.
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+<footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="/images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="/images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="/images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="/images/icon.png"></a>
+
+        </div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

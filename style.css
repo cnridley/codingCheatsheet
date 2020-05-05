@@ -264,8 +264,9 @@ footer {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 5px;
-    border: 5px solid purple;
+    border: 8px solid purple;
     display: inline-block;
+    margin-bottom: 20px;
 }
 
 pre {

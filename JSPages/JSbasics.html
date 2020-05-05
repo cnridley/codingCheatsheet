@@ -115,10 +115,223 @@
             </div>
         </div>
 
+<div class="row container-fluid comments">
+            <p class="title">Comparison Operators</p>
+            Comparison operators are used in statements to determine whether two or more variables or values are equal or different. <br><br>
+            <table class="table container">
+  <thead>
+    <tr>
+      <th scope="col">OPERATOR</th>
+      <th scope="col">DESCRIPTION</th>
+      <th scope="col">EXAMPLE</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">==</th>
+      <td>Equal to.</td>
+      <td>X == Y </td>
+      <td>Checks if X is the same as Y</td>
+    </tr>
+    <tr>
+      <th scope="row">===</th>
+      <td>Strictly equal value and type</td>
+      <td>"this"==="this"</td>
+      <td>Checks the value and datatpe.</td>
+    </tr>
+    <tr>
+      <th scope="row">!=</th>
+      <td>Not equal to.</td>
+      <td>X != Y</td>
+      <td>Checks if X is not the same as Y</td>
+    </tr>
+    <tr>
+      <th scope="row">!==</th>
+      <td>Strictly not equal value and type</td>
+      <td>"this"!=="this"</td>
+      <td>Checks the value and datatpe.</td>
+    </tr>
+    <tr>
+      <th scope="row">></th>
+      <td>Greater than</td>
+      <td>2 > 1</td>
+      <td>Checks if 2 is greater than 1.</td>
+    </tr>
+    <tr>
+      <th scope="row">>=</th>
+      <td>Greater than or equal too</td>
+      <td>5 >= 3</td>
+      <td>Checks if 5 is greater than or equal to 3 </td>
+    </tr>
+    <tr>
+      <th scope="row"> < </th>
+      <td>Less than</td>
+      <td>6 < 10</td>
+      <td>Checks if 6 is less than 10.</td>
+    </tr>
+    <tr>
+      <th scope="row"> <= </th>
+      <td>Less than or equal too</td>
+      <td>6 < 10</td>
+      <td>Checks if 6 is less than or equal to 10.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
+    <div class="row container-fluid comments">
+            <p class="title">Arithmetic Operators</p>
+        Arithmetic operators tell JS to do a mathematical operation and return a value.
+            <br><br>
+            <table class="table container">
+  <thead>
+    <tr>
+      <th scope="col">OPERATOR</th>
+      <th scope="col">DESCRIPTION</th>
+      <th scope="col">EXAMPLE</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">+</th>
+      <td>Addition</td>
+      <td>2 + 2 </td>
+      <td>Returns the sum of 2 + 2 i.e. 4.</td>
+    </tr>
+    <tr>
+      <th scope="row">-</th>
+      <td>subtraction</td>
+      <td>3 - 1</td>
+      <td>Subtracts 1 from 3 </td>
+    </tr>
+    <tr>
+      <th scope="row">*</th>
+      <td>multiplication</td>
+      <td>3 * 5 </td>
+      <td>Multiplies 3 and 5 together</td>
+    </tr>
+    <tr>
+      <th scope="row">/</th>
+      <td>Division</td>
+      <td>10 / 2</td>
+      <td>Divides 10 by 2. I.e. 5</td>
+    </tr>
+    <tr>
+      <th scope="row">%</th>
+      <td>Modulo</td>
+      <td>9 % 2</td>
+      <td>Divides 9 by 2, returns the remainder. I.e. 1 </td>
+    </tr>
+    <tr>
+      <th scope="row">**</th>
+      <td>Exponentiation</td>
+      <td>2 ** 3</td>
+      <td>Returns 2 to the power of 3. i.e. 9.</td>
+    </tr>
+    <tr>
+      <th scope="row"> ++ </th>
+      <td>Increments by 1 </td>
+      <td>2++</td>
+      <td>Returns 2 + 1. I.e 3</td>
+    </tr>
+    <tr>
+      <th scope="row"> --</th>
+      <td>Decrements by 1 </td>
+      <td> 3-- </td>
+      <td>Returns 3 - 1. I.e. 2.</td>
+    </tr>
+  </tbody>
+</table>
 
+Something that you should be aware of is that in Javascript. When you add a number and a string together, JS will automatically convert the number to a string and concatenate them together.<br>
+For example:<br>
+        let x = 2 + '4' would return 24 instead of the expected 6.
+</div>
 
+<div class="row container-fluid comments">
+            <p class="title">Logical Operators</p>
+            Compares two or more statements in a loop, and returns a boolean.
+            <br><br>
+            <table class="table container">
+  <thead>
+    <tr>
+      <th scope="col">OPERATOR</th>
+      <th scope="col">DESCRIPTION</th>
+      <th scope="col">EXAMPLE</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">&&</th>
+      <td>ALL statements have to be true</td>
+      <td> 2 == 2 && 7 > 5 </td>
+      <td>Checks both sides of the operator are true. Will return true.</td>
+    </tr>
+    <tr>
+      <th scope="row"> | |</th>
+      <td>Only one side of the statement has to be true</td>
+      <td>2 > 1 || 8 < 3 </td>
+      <td>Will contines if only one side is true. Will return true.</td>
+    </tr>
+    <tr>
+      <th scope="row">!</th>
+      <td>Negates the reults</td>
+      <td>!(3 > 1 && 2 > 1)</td>
+      <td>Checks the statement in brackets and then negates the answer. It would return fasle.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
+<div class="row container-fluid comments">
+            <p class="title">Assignment Operators</p>
+            Assignment operators take the assignment operator (=) and compound it with a mathematical operator to return a value.
+            <br><br>
+            <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">OPERATOR</th>
+      <th scope="col">EXAMPLE</th>
+    <th scope="col">SAME AS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">+=</th>
+      <td>X += Y </td>
+        <td>X = X + Y </td>
+    </tr>
+    <tr>
+      <th scope="row">-=</th>
+      <td>X -= Y</td>
+      <td>X = X - Y</td>
+    </tr>
+    <tr>
+      <th scope="row"> *= </th>
+      <td>X *= Y</td>
+      <td>X = X * Y</td>
+    </tr>
+    <tr>
+      <th scope="row"> /= </th>
+      <td>X /= Y</td>
+      <td>X = X / Y</td>
+    </tr>
+    <tr>
+      <th scope="row"> %= </th>
+      <td>X %= Y</td>
+      <td>X = X % Y</td>
+    </tr>
+    <tr>
+      <th scope="row"> **= </th>
+      <td>X **= Y</td>
+      <td>X = X ** Y</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 

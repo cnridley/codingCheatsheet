@@ -70,6 +70,72 @@
         We have used the same example as above and as you can see it is a lot easier to read.
     </div>
 
+<div class="row container-fluid MethodPara">
+            <p class="stringTitles">Methods</p>
+            Different methods can be used to find information out about a string or manipulate a string in a particular way.<br>
+    NB. Javascript starts counting from 0, so in this string, "hello" h would be index 0.
+            <br><br>
+            <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">METHOD</th>
+      <th scope="col">WHAT IT DOES</th>
+    <th scope="col">EXAMPLE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">.toLowerCase</th>
+      <td>Converts all the characters in a string to lower case</td>
+        <td>var example = "I AM A UPPER CASE STRING"<br>
+        var example1 = example.toLowerCase(); -> "i am a upper case string</td>
+    </tr>
+    <tr>
+      <th scope="row">.toUpperCase</th>
+      <td>Converts all the characters in a string to upper case</td>
+      <td>var text = "hello world"<br>
+        var text1 = text.toUpperCase -> "HELLO WORLD"</td>
+    </tr>
+    <tr>
+      <th scope="row">.trim</th>
+      <td>Removes white space from either side.</td>
+      <td>var whiteS = "         so much room             ";<br>
+        var noWhiteS = whiteS.trim(); -> "so much room"</td>
+    </tr>
+    <tr>
+      <th scope="row">.indexOf()</th>
+      <td>Finds the index of the first occurence of the string in brackets</td>
+      <td>var find = "Please locate the first locate word"<br>
+        var pos = find.indexOf("locate"); -> 7.
+        </td>
+    </tr>
+    <tr>
+      <th scope="row">.slice(start, end);</th>
+      <td>slices out the start number to end number [end] not included.</td>
+      <td>var fruit = "banana apple pear"<br>
+        var sliceFruit = fruit.slice(0, 6); -> "banana"</td>
+    </tr>
+    <tr>
+      <th scope="row"> .substr(start, [length])</th>
+      <td>Prints out from start number for the length that it stated.</td>
+      <td>var hello = "hello world"
+        var helloEx = hello.substr(2, 3); -> llo</td>
+    </tr>
+    <tr>
+      <th scope="row"> .repeat(x);</th>
+      <td>Repeats the string for by the number of times stated in brackets.</td>
+      <td>var hello = "hello world"
+        var helloEx = hello.repeat(3); -> "hello world hello world hello world"</td>
+    </tr>
+      <tr>
+      <th scope="row"> .length</th>
+      <td>Returns the length of the string.</td>
+      <td>var hello = "hello"
+        var helloEx = hello.length(); -> 5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 

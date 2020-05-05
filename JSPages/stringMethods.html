@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="../JS.html">String Methods</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+
+<div class="row container-fluid StringPara">
+    Strings are a collection of characters, numbers and symbols. Strings are how we display text and data, making it one of the most fundamental concepts in JavaScript to understand. <br>
+    There are three ways of creating a string:<br>
+    1. With single quotations i.e <pre>'I am a string'</pre>
+    2. With double quotations i.e <pre>"I am also a string"</pre>
+    3. Using template literals or backticks i.e <pre>`You guessed it, I am a string too!`</pre><br>
+    It does not matter which technique you use, as long as it matched at the beginning and end, otherwise errors can occur<br>
+    e.g. var string = 'The developer said 'Make sure you use the correct syntax' to the intern.' <br>
+    console.log(string) => 'The developer said' <br>
+    This is because JS has ended the string after the second '. To correct this put the quote in double quotations or use template literals.<br>
+    Each has its advantages and disadvantages which we will go into in more depth further down.<br><br>
+    Strings can be stored in variables to be called later on in the code, like the above example.
+</div>
+
+    <div class="row container-fluid concatPara">
+        <p class="stringTitles">String Concatenation:</p>
+
+        This is the joining of two or more strings using the + symbol. <br>
+        e.g.<br>
+        <pre>
+            var book = "Harry Potter"
+            var author = "J K Rowling"
+
+            var FaveBook = "My favourite book is " + book + " by" + author.
+
+            console.log(FaveBook);
+            My favourite book is Harry Potter by J K Rowling.
+        </pre>
+    </div>
+
+    <div class="row container-fluid templatePara">
+        <p class="stringTitles">Template literals:</p>
+        Template literals are a relatively new concept to JavaScript. It is simply constructing a string with backticks ``, instead of quotations. <br>
+        The advantages of this include:<br>
+        It reduces risk of error by using the incorrect quotations throughout the string.<br>
+        It provides a multi line support, so \n is not needed. Which reduces the amount of code that needs to be written and makes it look cleaner. e.g.
+        <pre>
+        var TemplateString = `This string
+                                will print out on multiple
+                                lines because we used
+                                a template literal`
+        </pre>
+        Another benefit of template literal is string interpolation. This is a way of joining strings together usng ${}. This is quicker, easier and looks cleaner than string concatenation. e.g.
+        <pre>
+        var book = "Harry Potter"
+        var author = "J K Rowling"
+
+        var FaveBook = `My favourite book is ${book} by ${author}`
+
+            console.log(FaveBook);
+            My favourite book is Harry Potter by J K Rowling.
+        </pre>
+        We have used the same example as above and as you can see it is a lot easier to read.
+    </div>
+
+
+
+
+<footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/icon.png"></a>
+
+        </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

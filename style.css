@@ -285,5 +285,53 @@ pre {
     margin-bottom: 15px;
 }
 
+table {
+    width: 100%;
+    overflow: scroll;
+    table-layout: fixed;
+}
+
+/* STRING METHODS */
 
 
+.StringPara {
+    background-color: #cffffa;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.concatPara {
+    background-color: #e5b5ff;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.stringTitles {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+    text-decoration: underline;
+
+}
+
+.templatePara {
+    background-color: #87ff5e;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}

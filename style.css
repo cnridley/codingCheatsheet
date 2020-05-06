@@ -347,6 +347,8 @@ table {
     display: inline-block;
 }
 
+/* MATH METHODS */
+
 .numbersPara {
     background-color: #fcfc60;
     text-align: center;
@@ -384,3 +386,35 @@ ul {
     display: inline-block;
 }
 
+/* ARRAYS */
+
+.arrayPara {
+    background-color: #cffffa;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.constructingArrays {
+    background-color: #fcfc4e;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.constructingMethods {
+    background-color: #fcfc4e;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}

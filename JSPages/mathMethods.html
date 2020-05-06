@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="../JS.html">Math Methods</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+<div class="row container-fluid numbersPara">
+    Javascript has only one type of number. Numbers can be written with or without decimals. When writing numbers that are not written with any quotations, otherwise it would be a string. <br>
+    <pre>
+    var x = 57;
+    x.typeOf(); -> number.
+
+    var y = "567"
+    y.typeOf(); -> string.
+    </pre>
+
+    Some things that you should note regarding JS numbers are:<br>
+    NaN - a JS reserved keyword indicating the result is 'Not a Number'<br>
+    E.g. var x = 500/"word" will return NaN. <br><br>
+    If you divide by 0, JS will always return 'infinity'. The data type of infinity is number.
+</div>
+
+<div class="row container-fluid numberMethods">
+<p class="stringTitles">Number Methods.</p>
+Javascript has different methods that can be used on numbers. Some are listed below <br><br>
+<ul>
+<li>parseInt() parses a string and returns an integer.</li><br>
+
+<li>parseFloat() takes a string and returns a floating-point number.</li><br>
+
+<li>toString() converts a number to a string
+ e.g.
+var myNum = 85;
+myNum.toString(); // '85'</li><br>
+
+
+<li>toFixed(2) converts a number to a string, but keeping only two decimals.</li><br>
+
+<li>isFinite(number) checks if the value in parenthesis is an actual number. </li><br>
+
+<li>isInteger(number) checks if the value in parenthesis is an integer. </li><br>
+
+<li>isNaN(number) checks if the value in parenthesis is NaN.</li><br>
+</ul>
+</div>
+
+<div class="row container-fluid mathMethods">
+<p class="stringTitles">Math Methods.</p>
+Javascript has different math methods that can be used on numbers. Some are listed below <br><br>
+
+<ul>
+<li>math.floor rounds down the number. 2.1 will be 2.</li><br>
+<li>math.ceil rounds up the number. 1.1 will be 2.</li><br>
+<li>math.round rounds to the nearest integer. It means 1.4 will be 1, but 1.6 will be 2.</li><br>
+<li>math.trunc removes the decimal part of the number. 4.5 will be 4.</li><br>
+<li>math.sqrt returns the square root of the number.</li><br>
+<li>math.cbrt returns the cube root of the number.</li><br>
+<li>math.random returns a random number between 0 (inclusive) and 1 (exclusive).</li><br>
+</ul>
+
+
+</div>
+
+
+
+
+
+
+<footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/icon.png"></a>
+
+        </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

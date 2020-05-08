@@ -322,7 +322,6 @@ table {
     font-family: 'Roboto Mono', monospace;
     font-weight: bolder;
     text-decoration: underline;
-
 }
 
 .templatePara {
@@ -417,4 +416,126 @@ ul {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 5px;
+}
+
+.indexingArrays {
+    background-color: #40ff00;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.ArrayMethods {
+    background-color: #eab5ff;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.method {
+    background-color: white;
+    border: 2px solid red;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+}
+
+.multiArray {
+    background-color: #ff8b87;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+/* OBJECTS */
+
+.objectsPara {
+    display: inline-block;
+    background-color: #cffffa;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.constructingObjects {
+    background-color: #ff8b87;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.constructingMethod {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    border: 2px solid black;
+    background-color: white;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.objects {
+    background-color: #f7fc4c;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.this {
+    max-height: 300px;
+    max-width: 300px;
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    border: 2px solid black;
+    margin-bottom: 15px;
+}
+
+.accessingObjects {
+    background-color: #0dff4d;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.addingObjects {
+    background-color: #c240ff;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
 }

@@ -39,6 +39,7 @@
     </div>
 
     <div class="row container-fluid constructingArrays">
+    <p class="stringTitles">Constructing Arrays</p>
     There are two different ways of constructing arrays:<br><br>
     </div>
     <div class="row constructingMethods">
@@ -58,16 +59,163 @@
     </div>
     </div>
 
+<div class="row container-fluid indexingArrays">
+    <p class="stringTitles">Indexing Arrays</p>
+    When counting the index of an array JS starts at 0. The above example would be indexed as the following:<br><br>
 
+<table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">0</th>
+      <th scope="col">1</th>
+    <th scope="col">2</th>
+        <th scope="col">3</th>
+        <th scope="col">4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Santa Cruz</th>
+      <td>Rocky Mountain</td>
+        <td>Norco</td>
+         <td>Commencal</td>
+         <td>Evil</td>
+    </tr>
 
+  </tbody>
+</table><br>
 
+Using the indexOf method, you can find the index of a particular elements. <br>
+    e.g. bike.indexOf("Commencal"); => 3.<br><br>
 
+    You can also access an item of an array by using the [].<br>
+    e.g. bike[2]; => Norco.<br><br>
 
+    If an index is not found, JS will return -1 <br>
+    bike.indexOf("giant"); => -1<br><br>
 
+    Trying to access an item that does not exist will return 'undefined'<br>
+    e.g. bike[11] => undefined<br><br>
 
+    PLEASE NOTE:<br>
+    Although when using the index method it starts counting at 0. <br>
+    When you use the .length method it counts all elements. <br>
+    e.g. bike.length(); => 5<br><br>
 
+    If you don't know how many items are in an array you can find the last item by applying the following and creating a new array.<br>
+    e.g var bikeLastItem = bike.length() - 1;<br>
+    bike[bikeLastIndex] => Evil.
 
+</div>
 
+    <div class="row container-fluid fluid ArrayMethods">
+        <p class="stringTitles">Array Methods.</p>
+        As with strings and numbers, arrays can also be manipulated by JS script by using array methods. <br>
+        When applying a method on an array they can either be a MUTATOR method, which modifies the original array, or ACCESSOR methods that returns a new array/value.
+        It will be stated which type they are below.<br><br>
+
+        The first method needed is the .isArray method which returns a boolean answer. Although we have the typeOf method, with arrays JS will return it as an object, which sometimes can cause confusion if the developer needs to know whether it is specifically an array. Using the above example:<br>
+        Array.isArray("bike"); => true.<br><br>
+
+        <div class="row container-fluid">
+
+        <div class="col-md-4 method">PUSH(); - mutator<br><br>
+            Adds an element(s) to the end of an array.<br>
+            bike.push("Giant"); => "Santa Cruz, Rocky Mountain, Norco, Commencal, Evil, Giant";
+            </div>
+
+        <div class="col-md-4 method">POP(); - mutator<br><br>
+            Removes the last element from the array.<br>
+            bike.pop(); => "Santa Cruz, Rocky Mountain, Norco, Commencal";
+            </div>
+
+        <div class="col-md-4 method">SHIFT(); - mutator<br><br>
+            Removes the first element from the beginning of an array.<br>
+            bike.shift(); => "Rocky Mounatin, Norco, Commencal, Evil";
+            </div>
+
+        </div>
+
+        <div class="row container-fluid">
+
+        <div class="col-md-4 method">UNSHIFT(); - mutator<br><br>
+            Adds an element(s) to the beginning of an array.<br>
+            bike.unshift("Liv"); => "Liv, Santa Cruz, Rocky Mountain, Norco, Commencal, Evil";
+            </div>
+
+        <div class="col-md-4 method">REVERSE(); - mutator<br><br>
+            Reverses the order of an array.<br>
+            bike.reverse(); => "Evil, Commencal, Norco, Rocky Mountain, Santa Cruz";
+            </div>
+
+        <div class="col-md-4 method">SLICE(); - Accessor<br><br>
+            Copies a portion of an array into a new array.<br>
+            var bike = ["Santa Cruz" , "Rocky Mountain" , "Norco" , "Commencal" , "Evil"];<br>
+            var newBike = bike.slice(1, 4); <br>
+            PLEASE NOTE - The first index no. will be included in the array. The last index no. will not be included. <br>
+            newBike; => "Rocky Mountain, Norco, Commencal";
+            </div>
+
+        </div>
+
+        <div class="row container-fluid">
+
+        <div class="col-md-4 method">SORT(); - mutator<br><br>
+            Will sort the array in alphabetical order. <br>
+            Please note. If an UpperCase words they will be ordered first. <br>
+            It will not sort an array of numbers in ascending order.<br>
+            bike.sort(); => "Commencal, Evil, Norco, Rocky Mountain, Santa Cruz";
+            </div>
+
+        <div class="col-md-4 method">FILL(); - mutator<br><br>
+            Replaces all the items in an array with a value. <br>
+            bike.fill("Liv"); => "Liv, Liv, Liv, Liv, Liv";<br><br>
+            Takes an optional value of start and end points.<br>
+            bike.fill("liv", 3, 4); => "Santa Cruz, Rocky Mountain, Norco, Liv, Evil";
+
+            </div>
+
+        <div class="col-md-4 method">SPLICE(); - mutator<br><br>
+            Add or remove an item from any position in the array.<br>
+            It take three parameters splice(index No. to start at, No. of items to be removed, items to add(optional));<br><br>
+            ADDING WITH SPLICE - set the 'items to be removed' as 0, so then JS will not remove anything and only add. <br>
+            bike.splice(2, 0, "trek"); => "Santa Cruz, Rocky Mountain, trek, Norco, Commencal, Evil";<br><br>
+            REMOVING WITH SPLCE - leave third parameter blank to remove an item in the array. To remove trek from the above example:<br>
+            bike.splice(2, 1); => "Santa Cruz, Rocky Mountain, Norco, Commencal, Evil";
+            </div>
+        </div>
+
+        <div class="row container-fluid">
+
+        <div class="col-md-6 method">CONCAT(); - accessor<br><br>
+            Joins two arrays together to make a new array.<br>
+            var bike = ["Santa Cruz" , "Rocky Mountain" , "Norco" , "Commencal" , "Evil"];<br>
+            var style = ["Road" , "Mountain", "Enduro"];<br><br>
+
+            var biking = bike.concat(style); => <br>
+            ["Santa Cruz" , "Rocky Mountain" , "Norco" , "Commencal" , "Evil", "Road" , "Mountain", "Enduro"];
+            </div>
+
+        <div class="col-md-6 method">JOIN(); - accessor<br><br>
+            Converts all elements of an array into a string.<br>
+            If no argument is given, it will be comma seperated with no white-space.<br>
+            bike.join(); => 'SantaCruz,RockyMountain,Norco,Commencal,Evil';<br>
+            To avoid that, add a parameter into the brackets. <br>
+            bike.join(', '); => 'Santa Cruz, Rocky Mountain, Norco, Commencal, Evil';<br>
+            bike.join('-'); => 'SantaCruz-RockyMountain-Norco-Commencal-Evil';
+            </div>
+        </div>
+    </div>
+
+    <div class="row container-fluid multiArray">
+    <p class="stringTitles">Multi-Dimensional Arrays</p>
+        An array within an array.<br>
+        E.g. var bike = [["Santa Cruz" , "Rocky Mountain" , "Norco" , "Commencal" , "Evil"], ["Road" , "Mountain", "Enduro"]];<br><br>
+        To index a multi-dimensional array you have to use two [][].<br><br>
+        bike[0] => "Santa Cruz" , "Rocky Mountain" , "Norco" , "Commencal" , "Evil";<br>
+        bike[1] => "Road" , "Mountain", "Enduro";<br>
+        bike[1][2] => "Enduro";
+    </div>
 
 <footer class="container-fluid">
         <div class="row"><p class="footerP">Useful external links:</p></div>

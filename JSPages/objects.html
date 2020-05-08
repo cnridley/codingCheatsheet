@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="../JS.html">Objects</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+
+    <div class="row container-fluid objectsPara">
+    An object is a data type in JS, made up of name:value pairs.<br>
+    Objects can be linked to real life objects. E.g. A person would be an object:<br>
+    var person ={<br>
+        height: 161,<br>
+        eyes: "brown",<br>
+        hair: "blonde",<br>
+        };  <br><br>
+        Each object can process data, send and receive messages. <br>
+        Objects are a vital data type to be familiar when coding and are used across many of the coding languages.
+    </div>
+
+    <div class="constructingObjects row container-fluid">
+    There are two ways of constructing an object.The Object literal is the preferred way of defining an object as it reduces confusion and possible errors occuring within the code.<br><br>
+        <div class="row container-fluid">
+        <div class="col-md-6 constructingMethod">
+            Object Literal:<br>
+            This simply uses the {} to define the variable as an object. <br>
+            E.g. <br>
+            var book = {<br>
+                Title: "Harry Potter and the Chamber of Secrets",<br>
+                Author: "J K Rowling", <br>
+                NumberOfBooks: 7.<br>
+                Favourite Book: function() {<br>
+                return `My favourite book is ${this.Title}`},<br>
+            }<br>
+        </div>
+        <div class="col-md-6 constructingMethod">
+            Object Constructor:<br>
+            This uses the 'new' keyword to create the object<br>
+            E.g. <br>
+            var book = new Object(<br>
+            Title: "Harry Potter",<br>
+                Author: "J K Rowling", <br>
+                NumberOfBooks: 7.<br>
+                FavouriteBook: function() {<br>
+                return `My favourite book is ${this.Title}`},<br>
+            );
+        </div>
+        </div>
+    </div>
+
+    <div class="row container-fluid objects">
+        Objects can be split into three sections, using the above as an example:<br><br>
+        1. The Object <br>
+        'book' would be the object. <br><br>
+        2. Property<br>
+        Each property is made up of name:value pairs<br>
+        'Title: "Harry Potter"' would be a property.<br>
+        Title being the property name and Harry Potter being the property value.<br>
+        Properties can contain any datatype. E.g. strings, boolean, numbers and often refers to to characteristics of the object.
+        <br><br>
+        3. Methods<br>
+        A method is made up of the method name i.e. Favourite book, and the method value i.e `My favourite book is ${this.Title}`<br>
+        A method is a task that the object can perform.<br><br>
+        <div class="this">
+            <p class="stringTitles">The 'this' keyword</p>
+            When using 'this' in an object it refers to the current object it is defined in.
+            For our example it is 'book'.
+        </div>
+    </div>
+
+    <div class="row container-fluid accessingObjects">
+        <p class="stringTitles container">Accessing Object Properties</p>
+
+        To access an objects property value you can use two methods:<br><br>
+        1.DOT NOTATION<br>
+        Using our ongoing example, if you wanted to acces the property value for the Number Of books, you would do the following:<br>
+        book.NumberOfBooks and it would return 7.<br>
+        This method is easier and faster to read. <br><br>
+        2. BRACKETS NOTATION<br>
+        book['NumberOfbooks'] => 7. <br>
+        This method must be used if an objects property contains any kind of special characters.<br>.
+    </div>
+
+    <div class="row container-fluid addingObjects">
+    <p class="stringTitles container">Adding, Modifying and Deleting Object Properties</p>
+        To ADD a new property to an object, you assign a new value to a property using the assignment operator i.e = <br>
+        To do this you use either the dot notation or [] notation.<br>
+        Using the ongoing example:<br>
+        book.character = "Hermione Granger"<br>
+        OR <br>
+        book['character'] = "Hermione Granger"<br><br>
+        To MODIFY an object you assign a new value to an existing property using the same method as above.<br>
+        book.character = "Ron Weasley"<br>
+        OR <br>
+        book['character'] = "Ron Weasley"<br><br>
+        To DELETE an object property use the delete keyword. <br>
+        E.g. delete book.Author. <br>
+        The author property would then be removed from the object.
+    </div>
+
+
+<footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/icon.png"></a>
+
+        </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

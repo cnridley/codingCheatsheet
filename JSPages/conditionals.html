@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="../JS.html">Conditional Statements</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+
+    <div class="row container-fluid conditionals">
+        Conditional statements control the flow of your program and determine how your code will look under certain conditions. <br>
+        Conditional statements execute a specific instruction depending on whether the outcome  is true or false.<br>
+        It is often viewed as a flow chart. Some examples of when you would use a conditional statement in your code would be:<br>
+        To only submit a form when all fields are filled out. <br>
+        To open something on a click event.
+    </div>
+
+    <div class="row container-fluid IF">
+        <p class="stringTitles">If statements</p>
+        If is a reserved keyword in Javascript, meaning it can not be used for anything else other than conditional statements. <br>
+        An if statement will determine whether the conditional is true or false and only run if it is true. If it is false the block of code will be ignored.<br>
+        An if statement is written starting with the if keyword, followed by a condition in brackets and then the code to be executed in curly brackets if the condition is true.<br>
+        i.e.<br>
+        if (condition) {<br>
+            // code to be executed <br>
+        }<br><br>
+        An example of this would be:<br>
+        <pre>
+        var num1 = 10;
+        var num2 = 15;
+        if (num1 <= num2) {
+            console.log(`${num1} is less than $num2`);
+        }
+        => 10 is less than 15.</num2)>
+        </pre>
+
+        In this example, the code would execute because 10 is less than 15. <br>
+        However, if you changed num1 to equal 20, the code would be ignored because num1 is now greater than num2.
+
+    </div>
+
+    <div class="row container-fluid ELSE">
+        <p class="stringTitles">Else Statements</p>
+    Often with code, even if the condition renders as false you want something to be executed.<br>
+    This is where the else statement comes in.<br>
+       The else statement is written after the if statement, but has no condition in brackets.<br>
+        i.e.<br><br>
+        if (condition){<br>
+            code to be executed if true;<br>
+        } else {<br>
+        code to be executed if false;<br>
+        }<br><br>
+        This can be useful to show the user warnings if they have not filled something out correctly or do not meet a certain criteria such as age.<br>
+
+        An example of an if...else statement would be:<br><br>
+        <pre>
+        var temp = 10;
+        if (temp >= 15){
+        console.log(It's hot outside, be sure to wear suncream!);
+        } else {
+        console.log(It's chilly out, remember a jacket!);
+        }
+        => It's chilly out, remember a jacket!
+        </pre>
+        This is because the temp variable was less than 15, therefore the condition was false so it moved onto the else statement.
+    </div>
+
+    <div class="row container-fluid ELSEIF">
+    <p class="stringTitles">Else...if Statements</p>
+    Usually in Javascript more than one condition needs to be evaluated, and the user needs more than two different options. This is where an else...if statements is handy. <br>
+        The else...if can evaluate more than one condition and will run the code that is true. <br>
+        If none of the code is true it will run the else statement. <br><br>
+        if (condition1) {<br>
+        block of code is executed if condition1 is true};<br>
+
+        else if (condition2) {<br>
+        block of code is executed if condition1 is false, but condition 2 is true};<br>
+
+        else { <br>
+        block of code is executed if condition 1 and condition 2 are both false };<br><br>
+
+        An example of this would be:<br><br>
+        <pre>
+        var money = 2.25;
+
+        if (money > 2.50) {
+            console.log('You can buy a chocolate bar and a drink');
+        } else if (money > 2) {
+            console.log('You can buy a chocolate bar');
+        } else {
+            console.log('You do not have enough money to buy anything');
+        }
+
+        => 'You can buy a chocolate bar'
+        </pre>
+        It ran the else if block of code because the if statement was false so it moved onto the else if statement which was true, the code stopped there and executed the block of code.
+    </div>
+
+    <div class="row container-fluid TERNARY">
+    <p class="stringTitles">Ternary Operator</p>
+        The ternary operator is a shorthand syntax for the if else statement, the syntax for this is: <br><br>
+
+        (condition) ? code if TRUE : code if FALSE<br><br>
+
+        An example of this is:<br><br>
+        <pre>
+        var sky = blue;
+
+        var niceDay = (sky===blue) ? "what a beautiful day!" : "Not so nice today, is it?";
+
+        console.log(niceDay);
+        => what a beautiful day!
+        </pre>
+    </div>
+
+    <div class="row container-fluid SWITCH">
+    <p class="stringTitles">Switch Statements</p>
+        The switch statement can be used interchangeably with the else if statement. It will evaluate blocks of code against cases and execute one or more blocks appropriately.<br>
+        The syntax for switch statements are as follows:<br><br>
+        switch (expression) {<br>
+            case x:<br>
+        // execute case x code block<br>
+        break;<br>
+    case y:<br>
+        // execute case y code block<br>
+        break;<br>
+    default:<br>
+        // execute default code block<br>
+}<br><br>
+        Lets break down the above syntax.<br>
+        1. The expression is evaluated<br>
+        2. Case x is tested against the expression to see if it is true. If it is the code block will execute and the break keyword will stop the switch statement.<br>
+        3. If case x is false. Case y is tested against the expression to see if it is true. If it is the code block will execute and the break keyword will stop the switch statement.<br>
+        4. If bothe case x and case y are false, the default code will be executed.<br><br>
+        Below is an example of a switch statement:
+        <pre>
+        var age = 20;
+
+        switch(true){
+        case age>=21:
+        'You can drink';
+        break;
+
+        case age=20:
+        'One more year then you can drink';
+        break;
+
+        default:
+        'Sorry, no drinking for you'
+        }
+        </pre>
+        As age =20, the code block would return 'One more year then you can drink'.
+
+    </div>
+    <div class="row container-fluid NESTED">
+        <p class="stringTitles">Nested Condition Statements</p>
+    A nested condition is an if statement within an if statement.
+    An example of this would be:<br><br>
+        <pre>
+        if (5 > 2) {
+
+  console.log("If statement here!");
+
+  if(1 > 3) {
+    console.log("Nested if statement!");
+  } else {
+    console.log("Nested else statement");
+  }
+} else {
+  console.log("Regular else statement");
+}
+</pre>
+=><br>
+If statement here <br>
+Nested else statement <br><br>
+
+        This is because the if statement is true, so it logs it. It then goes onto the nested conditional which is false so it logs the nested else statement.
+
+    </div>
+
+<footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/icon.png"></a>
+
+        </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

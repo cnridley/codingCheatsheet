@@ -539,3 +539,76 @@ ul {
     padding-bottom: 5px;
     display: inline-block;
 }
+
+/* CONDITIONALS */
+
+.conditionals {
+    background-color: #cffffa;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.IF {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    border: 7px solid purple;
+    margin: 0;
+    padding: 10px;
+}
+
+.ELSE {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    border: 7px solid red;
+    margin: 0;
+    padding: 10px;
+}
+
+.ELSEIF {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    border: 7px solid green;
+    margin: 0;
+    padding: 10px;
+}
+
+.TERNARY {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    border: 7px solid yellow;
+    margin: 0;
+    padding: 10px;
+}
+
+.SWITCH {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    border: 7px solid blue;
+    margin: 0;
+    padding: 10px;
+}
+
+.NESTED {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    border: 7px solid pink;
+    margin: 0;
+    padding: 10px;
+}

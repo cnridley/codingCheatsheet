@@ -612,3 +612,26 @@ ul {
     margin: 0;
     padding: 10px;
 }
+
+/* LOOPS */
+
+.loopPara {
+    background-color: #cffffa;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.forLoops {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    border: 7px solid pink;
+    margin: 0;
+    padding: 10px;
+}

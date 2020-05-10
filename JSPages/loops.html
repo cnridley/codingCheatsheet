@@ -38,6 +38,110 @@
         4 would not be included because 4 is not less than 4 so does not meet the criteria.
     </div>
 
+        <div class="row container-fluid loopAndArrays">
+            <p class="stringTitles">Loops and Arrays</p>
+        Loops can be used to modify arrays, coming in handy when you don't know the full length of an array or want to add elements into an array more efficiently. <br><br>
+            In the following example, an empty array has been created, which has then been modified using an array with the .push method.
+            <pre>
+            let example =[];
+
+            for(let i=0; i < 3; i++){
+            example.push(i);
+            console.log(example);
+            };
+
+            => [0]
+            [0, 1]
+            [0, 1, 2]
+            </pre>
+
+            When you don't know the length of the array but want to iterate through it, the .length method can be used. The loop will stop when the number of loops equals the length of the array. <br><br>
+            <pre>
+            let bike =['evil', 'giant', 'norco', 'conmencal'];
+
+            for (let i=0; i < bike.length; i++){
+            console.log(bike[i]);
+            };
+
+            = > 'evil'
+            'giant'
+            'norco'
+            'conmencal'
+            </pre>
+            <p class="stringTitles" id="forOF">Using the For...Of loop for Arrays</p>
+            The for...of method is a newer method in the ECMA-6 language. It is a way of looping through an array, similar to above but using less code, this make the chances of error less and makes it more read-able. <br><br>
+            <pre>
+            let bikes =['evil', 'giant', 'norco', 'conmencal'];
+
+            for (let bike of bikes){
+            console.log(bike);
+            };
+
+            => 'evil'
+            'giant'
+            'norco'
+            'conmencal'
+            </pre>
+            As you can see in the example, you get the same results as before, but the code is cleaner. <br>
+            It is also possible to print out the index associated with each element by using the pre-defined 'entries' method. <br>
+
+            <pre>
+            let bikes =['evil', 'giant', 'norco', 'conmencal'];
+
+            for (let [index, bike] of bikes.entries()) {
+            console.log(index, bike);
+            };
+
+            => 0 'evil'
+            1 'giant'
+            2 'norco'
+            3 'conmencal'
+            </pre>
+        </div>
+        <div class="row container-fluid loopsAndObjects">
+        <p class="stringTitles" id="forIn">Loops and Objects Using the For...In method</p>
+        The for...in method iterates over properties of an object, this can be useful to easily access the properties of an object instead of looking through all the code which can take time. To show how this is done, a simple object of a bike will be used, using the for...in method to access all the property values, property names and then linking them together.
+        <pre>
+        var bike ={
+            brand: "conmencal",
+            model: "furious",
+            year: 2019,
+            style: "downhill"
+        };
+
+        for(attribute in bike){
+        console.log(attribute);
+        };
+        =>
+        brand
+        model
+        year
+        style
+        </pre>
+        To access the property value you use the property name as the index value of the object:
+        <pre>
+        for(attribute in bike){
+        console.log(bike[attribute]);
+        };
+        =>
+        conmencal
+        furious
+        2019
+        downhill
+        </pre>
+        To link them all together you would do the following:
+        <pre>
+        for(attribute in bike){
+        console.log(`${attribute}` + : `${bike[attribute]}`);
+        };
+        =>
+        brand: conmencal
+        model: furious
+        year: 2019
+        style: downhill
+        </pre>
+        </div>
+
 
 
 <footer class="container-fluid">

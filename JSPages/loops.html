@@ -141,7 +141,88 @@
         style: downhill
         </pre>
         </div>
+        <div class="row container-fluid whileLoops">
+        <p class="stringTitles" id="while">While Loops</p>
+        The while loop is the most basic loop to construct in Javascript. The while loop will loop through multiple times as long as the specified condition is true. The syntax is as follows:<br><br>
+        while(condition){<br>
+            //code to be executed if condition is true.<br>
+        }<br><br>
+        An example of a while loop would be:<br>
 
+        <pre>
+        let i=10
+
+        while (i<10){
+	       console.log(“I am happy!”);
+	       i++; }
+
+            =>
+            “I am happy!”
+            “I am happy!”
+            “I am happy!”
+            “I am happy!”
+            “I am happy!”
+            “I am happy!”
+            “I am happy!”
+            “I am happy!”
+            “I am happy!”
+            “I am happy!”
+        </pre>
+        </div>
+        <div class="row container-fluid doWhileLoops">
+        <p class="stringTitles" id="doWhile">Do...While loops</p>
+        Do...while loops are similar to while loops, however, it will always execute the code at least once, even if the condition is not true. The syntax for the do...while loop is:<br><br>
+        do {<br>
+        //execute code<br>
+        } while (condition){<br>
+        //code to be executed if true<br>
+        }<br><br>
+        An example of a do...while loop is:<br>
+        <pre>
+        let x = 10;
+        do {
+        i++
+        console.log(i)
+        } while(i>9){
+        console.log(i + 'is less than 9');
+        }
+
+        => 11
+        </pre>
+        </div>
+
+        <div class="row container-fluid keywords">
+        <p class="stringTitles">Infinite loops, break and continue keyword.</p>
+        Infinite loops are loops that continue forever because the condition is always true.<br>They can cause browsers to crash.<br>
+        AVOID INFINITE LOOPS AT ALL COSTS!<br><br>
+        A way to avoid an infinite loop is to use the break keyword, this breaks the loop no matter where it is up too:
+        <pre>
+        let i = 0;
+
+        for (i=0; i<100; i++){
+        console.log(i);
+
+        if (i===50)
+           break;
+           }
+
+        the loop will break after 50.
+        </pre>
+        The continue keyword will skip an iteration and then continue on with the loop as normal:
+        <pre>
+        var i;
+
+        for (i=0; i<101; i++){
+        if ((i%2)===0){
+            continue;
+        }
+        console.log(i);
+            }
+
+        This will only log odd numbers.
+
+        </pre>
+        </div>
 
 
 <footer class="container-fluid">

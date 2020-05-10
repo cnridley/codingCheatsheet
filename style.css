@@ -655,3 +655,33 @@ ul {
     margin: 0;
     padding: 10px;
 }
+
+.whileLoops {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    border: 7px solid yellow;
+    margin: 0;
+    padding: 10px;
+}
+
+.doWhileLoops {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    border: 7px solid purple;
+    margin: 0;
+    padding: 10px;
+}
+
+.keywords{
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    border: 7px solid orange;
+    margin: 0;
+    padding: 10px;
+}

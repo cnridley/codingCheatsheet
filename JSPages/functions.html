@@ -28,6 +28,106 @@
     </div>
 
 
+    <div class="row container-fluid declaringFunctions">
+        <p class="stringTitles">Declaring Functions</p>
+        To declare a function, you use the following syntax:
+
+        <pre>
+            function functionName(parameter){
+                    //code to be executed
+            }
+        </pre>
+        The functionName should give the developer a clue as to what the function does, so that other developers can easily read the code.<br>
+        The parameters are optional but can also have multiple arguments, they need to be seperated by commas. (a, b).<br><br>
+        Below are three examples one without a paramter, one with one argument in the parameter and the other with multiple arguments in the parameter.<br><br>
+
+
+        <div class="row">
+            <div class="col-md-4 parameterEX">
+            No arguments:
+                <pre>
+                function hello(){
+                console.log(Hi, how are you?);
+                }
+                </pre>
+            </div>
+        <div class="col-md-4 parameterEx">
+        One argument:
+        <pre>
+        function number(a){
+            return a;
+        }
+        </pre>
+        </div>
+        <div class="col-md-4 parameterEx">
+        Multiple arguments:
+        <pre>
+        function add(a, b){
+            return a+b;
+        }
+        </pre>
+        </div>
+        </div>
+        Javascript will not do anything with these functions until they have been invoked. Which happens when you call the function name followed by a ; <br><br>
+        hello(); => 'Hi, how are you?'<br><br>
+        number(29); => 29<br><br>
+        add(7, 5); => 12.
+    </div>
+
+    <div class="row container-fluid functionExp">
+    <p class="stringTitles">Function Expressions</p>
+        This is when a function is assigned to a variable. When using the function expression you can remove the function name - making it an anonymous function - this makes the code more concise.<br><br>
+        The first example is a function expression with the function name still included, the second example is then the function expression with the function name omitted.<br><br>
+        As with all functions, Javascript will not do anything with the function until it is invoked, which is done by calling the variabe name. <br><br>
+        With the function name:<br>
+        <pre>
+        var sum = function add(a, b){
+            return a+b;
+        }
+        </pre>
+        Without the function name:<br>
+        <pre>
+        var sum = function(a, b){
+            return a+b;
+        }
+        </pre>
+        To call upon the function expression you would do:<br>
+        <pre>
+        sum(2, 5) => 7
+        </pre>
+    </div>
+
+    <div class="row container-fluid arrowFunctions">
+    <p class="stringTitles">Arrow Functions</p>
+        Arrow functions are a newer method in javascript they are always anonymous functions and a type of function expression. They are a way to make the code even more concise.<br><br>
+        We replace the function keyword with =>, still assigning it to a variable.<br>
+        We would write the above example as an arrow function:
+        <pre>
+        var sum = (a, b) => {
+            return a+b;
+        }
+        </pre>
+        <br>
+        If there is only one argument in the parameter the () can be removed:
+        <pre>
+        var num = x => {
+            return x;
+        }
+        </pre>
+        If there is no parameter included, you must include the empty ():
+        <pre>
+        var hello = () => {
+        console.log("Hi there!");
+        }
+        </pre>
+        As the above example are only a one line return, they can be reduced down even further by removing the return keyword and curly brackets:
+        <pre>
+        var sum = (a, b) => a+b;
+        </pre>
+        How you write arrow functions is personal preference as all of them will give the same result.
+    </div>
+
+
 
 <footer class="container-fluid">
         <div class="row"><p class="footerP">Useful external links:</p></div>

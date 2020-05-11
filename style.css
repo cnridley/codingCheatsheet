@@ -698,3 +698,40 @@ ul {
     padding-bottom: 5px;
     display: inline-block;
 }
+
+.declaringFunctions {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    border: 7px solid orange;
+    margin: 0;
+    padding: 10px;
+}
+
+.parameterEx {
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+}
+
+.functionExp {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    border: 7px solid yellow;
+    margin: 0;
+    padding: 10px;
+}
+
+.arrowFunctions{
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    border: 7px solid red;
+    margin: 0;
+    padding: 10px;
+}
+

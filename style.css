@@ -735,3 +735,60 @@ ul {
     padding: 10px;
 }
 
+/* SCOPE */
+
+.scopePara {
+    background-color: #cffffa;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.global{
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    border: 7px solid red;
+    padding: 10px;
+    display: inline-block;
+}
+
+.local {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    border: 7px solid yellow;
+    padding: 10px;
+    display: inline-block;
+}
+
+.scopes {
+    margin: 0;
+    padding: 0;
+}
+
+.VariablesAndScope {
+    background-color: #eab5ff;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.hoisting{
+    background-color: #87ff5e;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}

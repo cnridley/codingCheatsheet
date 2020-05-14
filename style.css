@@ -833,3 +833,14 @@ ul {
     padding-top: 20px;
     padding-bottom: 5px;
 }
+
+.AccessingElements {
+    background-color: #87ff5e;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}

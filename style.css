@@ -792,3 +792,44 @@ ul {
     padding-bottom: 5px;
     display: inline-block;
 }
+
+/* THIS */
+
+.thisPara {
+    background-color: #cffffa;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+/* THE DOM */
+
+.DomPara { background-color: #cffffa;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.DomImg {
+    max-height: 500px;
+    max-width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nodePara{
+     text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}

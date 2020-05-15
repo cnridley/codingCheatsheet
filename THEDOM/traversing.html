@@ -9,14 +9,86 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="/CSS/jsExamples.css">
+<link rel="stylesheet" href="/CSS/jsExamples.css">
 </head>
 
 <body>
     <div class="container-fluid header"><p class="heading"><a href="../JSPages/JSexamples.html">Traversing the DOM</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
     </div>
 
+    <div class="row container-fluid">
+    <div class="col-md-6">
+    <ul>
+        <li>Hello!</li>
+        <li>How</li>
+        <li>Are</li>
+        <li>You?</li>
+    </ul>
+    </div>
+    <div class="col-md-6 childNode">
+        In this example, I have made a simple unordered list, with four list elements as child nodes. <br>
+        In the JS script page, I have used the firstElementChild and lastElementChild method to give them a background color of yellow and pink. Below is the JS code for this:<br>
+        <pre>
+        let childEx1 = document.getElementsByTagName("ul")[0];
 
+        childEx1.firstElementChild.style.background = "yellow";
+
+        childEx1.lastElementChild.style.background = "pink";
+        </pre>
+    </div>
+    </div>
+
+    <div class="row container-fluid">
+    <div class="col-md-6">
+    <ul>
+    <li>I</li>
+    <li>have</li>
+    <li>been</li>
+    <li>styled</li>
+    <li>using</li>
+    <li>a</li>
+    <li>for...of</li>
+    <li>loop</li>
+    </ul>
+    </div>
+        <div class="col-md-6 childNode">
+    I have used a for...of loop to iterate through all the children of the unordered list. As you will see I have used the [1] at the end which defines which unordered list it will target. If I used [0] it will have changed the border of the above example. Below is the JS code for this:<br><br>
+
+        <pre>
+        let childEx2 = document.getElementsByTagName("ul")[1];
+
+        for(let element of childEx2.children){
+
+        element.style.border = '2px dashed purple';
+        }
+        </pre>
+            </div>
+    </div>
+
+    <div class="row container-fluid">
+    <div class="col-md-6">
+    <ul>
+    <li>We</li>
+    <li>are</li>
+    <li>siblings</li>
+    </ul>
+    </div>
+    <div class="col-md-6 childNode">
+    In this example, I have targeted the elements using the sibling methods. We have first targeted the ul list and stored it in a variable called 'sibling', we have then targeted the second child [1] of the 'sibling' variable and stored it under the siblingEx variable.<br>
+From there we have used the sibling methods to change the styles.
+
+        <pre>
+
+        let sibling = document.getElementsByTagName("ul")[2];
+
+        let siblingEx = sibling.children[1];
+
+        siblingEx.previousElementSibling.style.background = "green";
+
+        siblingEx.nextElementSibling.style.border = "3px dashed orange";
+        </pre>
+    </div>
+    </div>
 
 <footer class="container-fluid">
         <div class="row"><p class="footerP">Useful external links:</p></div>
@@ -35,7 +107,7 @@
         </div>
 </footer>
 
-<script src="../JSscripts/script.js" type="text/javascript"></script>
+<script src="/JSscripts/traversing.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

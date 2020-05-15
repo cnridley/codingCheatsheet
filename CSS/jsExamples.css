@@ -56,3 +56,19 @@
     margin-bottom: 20px;
     border: 5px solid black;
 }
+
+/*traversing the DOM */
+
+li {
+    border: 1px solid blue;
+    margin: 5px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.childNode {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}

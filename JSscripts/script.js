@@ -1,3 +1,4 @@
+/* accessing elements variables*/
 let idExample = document.getElementById('example');
 let classExample = document.getElementsByClassName('JSEXAMPLE');
 let classExample2 = document.getElementsByClassName('JSEXAMPLE1');
@@ -7,7 +8,7 @@ let queryAllExample = document.querySelectorAll('.Query-Selector-All');
 
 
 
-
+/*JS for accessing elements*/
 idExample.style.background = "yellow";
 idExample.style.border = "3px dashed blue";
 
@@ -28,3 +29,5 @@ queryExample.style.background = "orange";
 queryAllExample.forEach(query =>{
     query.style.border = "2px dashed green";
 })
+
+

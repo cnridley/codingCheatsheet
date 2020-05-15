@@ -67,6 +67,33 @@
 </table>
 </div>
 
+    <div class="row container-fluid TraversingDOM">
+    <p class="stringTitles">Traversing the DOM</p>
+        You sometimes will not want to move through the DOM by specifying each and every element beforehand. <br>
+        This is where traversing across the DOM is essential to move up and down branches, using the parent, child and sibling nodes.<br><br>
+        PARENT NODES:<br>
+        The parent nodes are the nodes that are ONE level above another node. There are two methods to retrieve the parent nodes:<br>
+        .parentNode - retrieves the parent node.<br>
+        .parentElementNode - retrieves the parent element node.<br>
+        .parentNode.parentNode - using the method twice will retrieve the grandparent.<br><br>
+        CHILD NODES:<br>
+        Child nodes are the nodes that are ONE level below a node. Any nodes further down than that are known as descendants. The methods to retrieve child nodes are:<br>
+        .childNode - will return a list of all child nodes. Including text. <br>
+        .firstChild - returns the first child node.<br>
+        .lastChild - returns the last child node.<br>
+        .children - returns all the element child nodes.<br>
+        .firstElementChild - returns the first child element node.<br>
+        .lastElementChild - returns the last child element node.<br><br>
+        The for...of loop can be used the iterate through all child nodes.<br><br>
+        SIBLING NODES:<br>
+        Siblings nodes are are the same level of the DOM tree and do not have to be the same type of node. I.e. text, elements and comments can all be siblings. The methods to retrieve siblings nodes are:<br>
+        .previousSibling - returns the previous sibling node.<br>
+        .nextSibling - returns the next sibling node. <br>
+        .previousElementSibling - returns the previous sibling element node.<br>
+        .nextElementSibling - returns the next sibling element node.<br><br>
+
+        <a href="traversing.html">CLICK HERE </a> to see examples of traversing the DOM using parent/child/sibling nodes.
+    </div>
 
 
 

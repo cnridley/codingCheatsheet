@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/CSS/jsExamples.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="../JSPages/JSexamples.html">Accessing elements using the DOM</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+
+    <div class="row container-fluid examples">
+        <br>
+        Although all of this can be done in the CSS style sheet, it is useful to use JS because then you can make the website interactive for the user, e.g. when clicked the background changes colour. But for now we will just access the elements and change the styles.<br><br>
+        </div>
+        <div class="row container-fluid classExample">
+        <div class="col-md-6" id="example">I was accessed using the ID method!</div>
+        <div class="col-md-6">Related code:<br>
+            HTML:<br>
+            A div with the id='example'<br>
+            JAVASCRIPT:<br>
+            <pre>let idExample = document.getElementById('example');
+
+                idExample.style.background = "yellow";
+                idExample.style.border = "3px dashed blue";
+            </pre>
+            </div>
+        </div>
+
+        <div class="row container-fluid idExample">
+        <div class="col-md-6">
+            <div class="JSEXAMPLE">I have a class of JSEXAMPLE</div>
+            <div class="JSEXAMPLE">I have a class of JSEXAMPLE</div>
+            <div class="JSEXAMPLE1">I have a class of JSEXAMPLE1</div>
+            <div class="JSEXAMPLE1">I have a class of JSEXAMPLE1</div>
+        </div>
+            <div class="col-md-6">
+            When using the classNames method, JS will select all the classes with the same name and put it into an array. You can either use an array index to target just one of the class names, or more often you would use a for loop to loop through the length of an array and apply it to all the classes with the same name.<br>
+                RELATED JS CODE: <br>
+                <pre>
+                let classExample = document.getElementsByClassName('JSEXAMPLE');
+                let classExample2 = document.getElementsByClassName('JSEXAMPLE1');
+
+                classExample[0].style.border = "3px solid purple";
+                classExample[1].style.background = "pink";
+
+                for (i = 0; i < classExample2.length; i++) {
+                    classExample2[i].style.border="2px dashed black";
+
+                </pre>
+            </div>
+        </div>
+    <div class="row container-fluid tagExample">
+        <div class="col-md-6">
+        <section>I am a section!!</section>
+        <section>I am also a section!</section>
+        <section>The third and last section!</section>
+        </div>
+        <div class="col-md-6">
+        A less common way to access elements is with tag method. <br>
+        In our example we have made three sections and have targeted them all using a for loop.<br>
+        JS CODE:<br>
+            <pre>
+            let tagExample = document.getElementsByTagName('section');
+
+            for (i=0; i< tagExample.length; i++){
+            tagExample[i].style.background="#cffffa";
+            tagExample[i].style.border = "2px solid purple";
+                }
+            </pre>
+        </div>
+    </div>
+
+    <div class="row container-fluid QuerySelectorExample">
+    <div class="col-md-6" id="queryEx">I was accessed used a query selector! I have an id of queryEx.</div>
+    <div class="col-md-6">In JS you can access single elements using the query selector method.
+    If there are more elements with the same class/tag query selector would select the first one.
+        <br>
+        <pre>
+        let queryExample = document.querySelector('#queryEx');
+
+        queryExample.style.background = "orange";
+        </pre>
+    </div>
+    </div>
+
+    <div class="row container-fluid QuerySelectorAll">
+    <div class="col-md-6">
+        <div class="Query-Selector-All">Hello</div>
+        <div class="Query-Selector-All">My</div>
+        <div class="Query-Selector-All">Name</div>
+        <div class="Query-Selector-All">Is</div>
+        <div class="Query-Selector-All">Chloe!</div>
+    </div>
+        <div class="col-md-6">
+        The query selector all method will select all classes/elements with the same name and style them accordingly. Our above example is 5 divs all with the class of 'Query-Selector-All'.<br><br>
+            <pre>
+            let queryAllExample = document.querySelectorAll('.Query-Selector-All');
+            queryAllExample.forEach(query =>{
+            query.style.border = "2px dashed green";
+                })
+            </pre>
+
+        </div>
+    </div>
+        <div class="row container-fluid pleaseNote">
+        PLEASE NOTE THAT ALL VARIABLES SHOULD BE DEFINED AT THE TOP OF THE JAVASCRIPT STYLE SHEET WITH THE CODE BELOW!
+        </div>
+
+<footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/icon.png"></a>
+
+        </div>
+</footer>
+
+<script src="../JSscripts/script.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

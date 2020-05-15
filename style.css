@@ -844,3 +844,17 @@ ul {
     padding-bottom: 5px;
     display: inline-block;
 }
+
+/*JS EXAMPLES*/
+
+.Access {
+    background-color: #ff99e4;
+    border: 3px solid black;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    text-align: center;
+}

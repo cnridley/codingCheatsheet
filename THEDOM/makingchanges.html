@@ -65,15 +65,73 @@
 
     newToDo.textContent = 'Write code';
 
-    toDoList.insertBefore(newToDo, toDoList.lastElementChild);
+    toDoList.insertBefore(newToDo, toDoList.children[1]);
     </pre>
     </div>
     <div class="col-md-6 changesText">
     In the to-do list example, we started with a to-do list with two list items in the HTML page (Go Biking and laundry). We assigned the unordered list an id of toDo<br>
     In the JS code we used the .getElementById to retrieve the 'ul' and assigned to a variable called toDoList. After that, we created the newToDo variable and created a li element within it. We then used the .textContent method to assign 'write code' to the newToDo variable.<br>
-    Finally we used the insertBefore method to insert the newToDo variable before the 'last element child' of the Ul i.e. toDoList.
+    Finally we used the insertBefore method to insert the newToDo variable before the .children[1] (go biking) of the Ul i.e. toDoList.<br>
     </div>
     </div>
+    </div>
+
+    <div class="examples">
+    <ul id='replaceList'>
+    <li>The</li>
+    <li>last</li>
+    <li>list</li>
+    <li>item</li>
+    <li>has</li>
+    <li>been</li>
+    <li>replaced.</li>
+    </ul>
+        <div class="row container-fluid">
+        <div class="col-md-6">
+        <pre>
+        let rep = document.getElementById('replaceList');
+
+        let rep1 = document.createElement('li');
+
+        rep1.textContent = 'ooops';
+
+        rep.replaceChild(rep1, rep.children[6]);
+        </pre>
+        </div>
+        <div class="col-md-6 changesText">
+        In this example, the last list item was originally 'replaced' but was replaced with 'ooops'. <br>
+        We used the .replace method to do this, it takes two arguments. The first is the new node and the second is the node it is replacing. In this case, it is the 6th child of the unordered list - remember its starts counting from 0.
+        </div>
+        </div>
+    </div>
+
+    <div class="examples">
+
+        <ul id='removingNode'>
+        <li>Some</li>
+        <li>nodes</li>
+        <li>have</li>
+        <li>been</li>
+        <li>removed!</li>
+        <li>Sorry!</li>
+        </ul>
+
+        <div class="row container-fluid">
+        <div class="col-md-6">
+        <pre>
+        let example = document.getElementById('removingNode');
+
+        example.removeChild(example.children[3]);
+
+        example.children[0].remove();
+
+        </pre>
+        </div>
+        <div class="col-md-6 changesText">
+        In this example, the orginal HTML text was a unordered list (id = removingNode) with list items 'Some, nodes, have, been, removed! Sorry!<br>
+        Using the removeChild example we removed the third child of the unordered list, and with the .remove method we removed the first (zero index) of the unordered list, which then displays what you can see.
+        </div>
+        </div>
     </div>
 
 

@@ -60,7 +60,7 @@
 /*traversing the DOM */
 
 li {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     margin: 5px;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
@@ -71,4 +71,24 @@ li {
     font-size: 12px;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
+}
+
+/* making changes */
+
+.changes
+    {background-color: #cffffa;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.changesText {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 25px;
 }

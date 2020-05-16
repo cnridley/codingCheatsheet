@@ -95,6 +95,80 @@
         <a href="traversing.html">CLICK HERE </a> to see examples of traversing the DOM using parent/child/sibling nodes.
     </div>
 
+    <div class="row container-fluid changingNodes">
+    <p class="stringTitles">Creating, inserting and removing nodes using the DOM</p>
+        In a dynamic website, elements and text are often added using JavaScript, so that they can be manipulated and changed interactively. I will outline the methods here, <a href="makingchanges.html">CLICK HERE </a> to see an example of how to apply it.<br><br>
+        CREATING NEW NODES:<br>
+        <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">METHOD</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">createElement()</th>
+      <td>Creates a new element node</td>
+    </tr>
+    <tr>
+      <th scope="row">createTextNode() </th>
+      <td>Creates a new text node</td>
+    </tr>
+    <tr>
+      <th scope="row">node.textContent </th>
+      <td>Get or set the text content of an element node.</td>
+    </tr>
+    <tr>
+      <th scope="row">node.innerHTML</th>
+      <td>Get or set the HTML content of an element.</td>
+    </tr>
+  </tbody>
+</table><br><br>
+        INSERTING NODES INTO THE DOM:
+        <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">METHOD</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">node.appendChild() </th>
+      <td>Add a node as the last child of a parent element.</td>
+    </tr>
+    <tr>
+      <th scope="row">node.insertBefore() </th>
+      <td>Insert a node into a parent element before a specified sibling node.</td>
+    </tr>
+      <tr>
+      <th scope="row">node.replaceChild() </th>
+      <td>Replace an existing node with a new node.</td>
+    </tr>
+  </tbody>
+</table><br><br>
+        REMOVING NODES:
+        <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">METHOD</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">node.removeChild() </th>
+      <td>Remove child node</td>
+    </tr>
+    <tr>
+      <th scope="row">node.remove()</th>
+      <td>Remove node.</td>
+    </tr>
+  </tbody>
+</table><br><br>
+    </div>
+
 
 
 

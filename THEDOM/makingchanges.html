@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/CSS/jsExamples.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="../JSPages/JSexamples.html">Creating, inserting and removing nodes from the DOM</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+
+    <div class="container-fluid row changes">
+    To show how to create, insert and remove nodes from the DOM. An ordered list has been made which begins with only two list items:
+    </div>
+
+    <div class='examples'>
+    <ul>
+    <li>Grocery list:</li>
+    <li>Eggs</li>
+    <li>Bread</li>
+    </ul>
+
+    <div class="row container-fluid">
+    <div class="col-md-6">
+    <pre>
+
+    let groceryList = document.querySelector('ul');
+
+    let newItem = document.createElement('li');
+
+    newItem.textContent = 'cheese';
+
+    groceryList.appendChild(newItem);
+    </pre>
+    </div>
+    <div class="col-md-6 changesText">
+    In the grocery list example, we started with a unordered list with two list items (eggs and bread) in the HTML page.<br>
+    Using the JS code shown, we selected the ul using the query selector and assigned it to a new variable (groceryList), we then created a new li item using the .createElement and assigned it to a variable call 'newItem', using the .textContent methd we assigned newItem to contain the text 'cheese'. Finally we used the .appendchild to add the new node (newItem) to the ul list i.e groceryList variable.
+    </div>
+    </div>
+    </div>
+
+
+    <div class="examples">
+    <ul id='toDo'>
+    <li>To Do: </li>
+    <li>Go biking</li>
+    <li>laundry</li>
+    </ul>
+
+    <div class="row container-fluid">
+    <div class="col-md-6">
+    <pre>
+
+    let toDoList = document.getElementById('toDo');
+
+    let newToDo = document.createElement('li');
+
+    newToDo.textContent = 'Write code';
+
+    toDoList.insertBefore(newToDo, toDoList.lastElementChild);
+    </pre>
+    </div>
+    <div class="col-md-6 changesText">
+    In the to-do list example, we started with a to-do list with two list items in the HTML page (Go Biking and laundry). We assigned the unordered list an id of toDo<br>
+    In the JS code we used the .getElementById to retrieve the 'ul' and assigned to a variable called toDoList. After that, we created the newToDo variable and created a li element within it. We then used the .textContent method to assign 'write code' to the newToDo variable.<br>
+    Finally we used the insertBefore method to insert the newToDo variable before the 'last element child' of the Ul i.e. toDoList.
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+        <div class="row container-fluid pleaseNote">
+             <a href="dom.html">Click here to return back to The DOM cheatsheet! </a>
+        </div>
+
+
+
+<footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/icon.png"></a>
+
+        </div>
+</footer>
+
+<script src="../JSscripts/makingChanges.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

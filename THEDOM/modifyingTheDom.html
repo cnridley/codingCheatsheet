@@ -15,13 +15,22 @@
 <body>
     <div class="container-fluid header"><p class="heading"><a href="../JSPages/JSexamples.html">Modifying Attribute, Classes and Styles</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
     </div>
+        <div class="row container-fluid changesText">
+        <img id="imageEx">
+        In this example, in the HTML page we have an 'img' element with no 'src' attribute and an id of 'imageEx'.<br>
+        Using JavaScript we added the cat image you can see. We retrieved the img element via the id. We then used the .setAttribute with two arguments - the first one was the attribute added, the second one the image pathway. <br>
+        <pre>
 
+        let setEx = document.getElementById('imageEx');
 
+        setEx.setAttribute('src', '../images/cartoon-cat-free.png');
+
+        </pre>
+
+        </div>
         <div class="row container-fluid pleaseNote">
              <a href="dom.html">Click here to return back to The DOM cheatsheet! </a>
         </div>
-
-
 
 <footer class="container-fluid">
         <div class="row"><p class="footerP">Useful external links:</p></div>

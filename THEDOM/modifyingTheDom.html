@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container-fluid header"><p class="heading"><a href="../JSPages/JSexamples.html">Modifying Attribute, Classes and Styles</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    <div class="container-fluid header"><p class="heading"><a href="../JSPages/JSexamples.html">Modifying Attributes and Classes</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
     </div>
         <div class="row container-fluid changesText">
         <img id="imageEx">
@@ -26,8 +26,60 @@
         setEx.setAttribute('src', '../images/cartoon-cat-free.png');
 
         </pre>
-
         </div>
+
+        <div class="row container-fluid changesText">
+        <div class="row container-fluid blue" id="blue">Using className method I have the red class</div>
+        <div class="row container-fluid blue">I have the blue class, written in the HTML page.</div>
+            <div class="row container-fluid">
+            In the above example, we have two div that were both originally styled using the class name 'blue'. In Javascript using the .className method we applied the 'red' class to the first div, which over-rode any existing classes it had. Because it also have bootstrap styling it also over-rode all of that, which is why it is no longer the full length of the viewport. Below is the css and JS code: <br>
+                <pre>
+
+            .red {
+        text-align: center;
+        font-size: 13px;
+        font-family: 'Roboto Mono', monospace;
+        border: 3px dashed red;
+        margin-bottom: 25px;
+        margin-left: 15px;
+        }
+
+.blue {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    border: 3px dashed blue;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+let blueEx = document.getElementById('blue');
+
+blueEx.className="red";
+
+                </pre>
+            </div>
+
+            <div class="row container-fluid">
+            <div class="red container-fluid" id="red">I have a blue background because of the clasList.add(); method. </div>
+            <div class="red container-fluid">My class was added via the HTML page.</div>
+            <div class="row container-fluid">
+                Using the classList.add(); method does not over-ride the existing classes like className does, instead it adds extra classes to the existing classes. Below is the CSS and JS code for the above divs. <br><br>
+                <pre>
+
+                .background {
+            background-color: aqua;
+                    }
+
+                    let backgroundEx = document.getElementById('red');
+
+                    backgroundEx.classList.add('background');
+                </pre>
+                </div>
+            </div>
+        </div>
+
+
         <div class="row container-fluid pleaseNote">
              <a href="dom.html">Click here to return back to The DOM cheatsheet! </a>
         </div>

@@ -92,3 +92,25 @@ li {
     font-family: 'Roboto Mono', monospace;
     margin-bottom: 25px;
 }
+
+.red {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    border: 3px dashed red;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+.blue {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    border: 3px dashed blue;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+.background {
+    background-color: aqua;
+}

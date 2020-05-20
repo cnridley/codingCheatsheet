@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="../JS.html">Events</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+
+        <div class="row container-fluid EventsPara">
+        Events are actions that take place in the browser and trigger an action. <br>
+            Event listeners attach a responsive interface to an element. They are a relatively new concept in JS but are more commonly used than event handlers because they have more advantages, such as:<br>
+            1. You can set multiple event listeners to the same element and they will all fire when called.<br>
+            2. You can apply an event listener to the document and window object.<br><br>
+            Below we will outline how to use the .addEventListerner() and outline some common events. <br><br>
+            To see examples of eventlisteners, head over the the 'JS examples' page or <a href='../THEDOM/eventExamples.html'> CLICK HERE!</a>
+    </div>
+
+    <div class="row container-fluid EventListeners">
+    <p class="stringTitles">Event Listeners</p>
+        The .addEventListener(); takes two mandatory parameters: <br>
+        1. The event it is listening for.<br>
+        2. The listener call-back function. <br><br>
+    <p class="stringTitles">Common events:</p>
+         <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">EVENT</th>
+      <th scope="col">DESCRIPTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">click</th>
+      <td>Fires when element is clicked once</td>
+    </tr>
+    <tr>
+      <th scope="row">dblclick</th>
+      <td>Fires when element is clicked twice </td>
+    </tr>
+      <tr>
+      <th scope="row">mouseenter </th>
+      <td>Fires when pointer enters element</td>
+    </tr>
+      <tr>
+      <th scope="row">mouseleave</th>
+      <td>Fires when pointer leaves element</td>
+    </tr>
+      <tr>
+      <th scope="row">mousemove</th>
+      <td>Fires everytime mouse moves in element.</td>
+    </tr>
+      <tr>
+      <th scope="row">classList.remove(); </th>
+      <td>Removes a class value. </td>
+    </tr>
+  </tbody>
+</table><br><br>
+    </div>
+
+<footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/icon.png"></a>
+
+        </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

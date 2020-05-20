@@ -114,3 +114,43 @@ li {
 .background {
     background-color: aqua;
 }
+
+/* events examples */
+
+#clkEx {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: yellow;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.eventEx {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+#dblClk {
+    border: 10px solid black;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+#hoverEx {
+    background-color: purple;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    padding: 30px;
+}

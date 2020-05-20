@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/CSS/jsExamples.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="../JSPages/JSexamples.html">Event Examples</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+
+    <div id="clkEx">Click me to change the background colour!</div>
+    <div class="row container-fluid eventEx">
+        In the above example, we have used the event listener with the 'click' method to change the background color when clicked. We have also used an arrow function to create the function. The id of the div was 'clkEx' <br>
+        <pre>
+
+        let cEx = document.getElementById('clkEx');
+
+        let changeBack = () => {
+            cEx.style.backgroundColor = 'orange';
+                }
+
+            cEx.addEventListener('click', changeBack);
+        </pre>
+    </div>
+
+    <div id="dblClk">Double click me to see what happens!</div>
+    <div class="row container-fluid eventEx">
+    In the above example, we used the event listener with the 'dblclick' method. We called a function we created that changed the text and the background colour when double clicked.<br>
+    <pre>
+
+    let dblEx = document.getElementById("dblClk");
+
+    let changeDiv = () => {
+    dblEx.innerHTML = "WOAH YOU CHANGED MY TEXT!!";
+    dblEx.style.background = "red";
+    }
+
+    dblEx.addEventListener('dblclick', changeDiv);
+    </pre>
+    </div>
+
+    <div id="hoverEx">Hover over me...</div>
+
+    <div class="row container-fluid eventEx">
+        In this above example, we have used the 'mouseenter' and 'mouseleave' method in order to create a hover effect. When hovered over we change the style to 'none' so that the div is not displayed. Then when the mouse leaves, the style is changed back to 'block' so that it re-appears. <br>
+        <pre>
+
+        let Hver = document.getElementById('hoverEx');
+
+        let change = () => {
+        Hver.style.display = 'none';
+            }
+
+        let back = () => {
+        Hver.style.display = 'block';
+            }
+
+        Hver.addEventListener('mouseenter', change);
+
+        Hver.addEventListener('mouseleave', back);
+        </pre>
+    </div>
+
+        <div class="row container-fluid pleaseNote">
+             <a href="../JSPages/events.html">Click here to return back to the events page! </a>
+        </div>
+
+<footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/icon.png"></a>
+
+        </div>
+</footer>
+
+<script src="../JSscripts/events.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

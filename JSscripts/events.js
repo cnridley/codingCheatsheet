@@ -37,3 +37,12 @@ let back = () => {
 Hver.addEventListener('mouseenter', change);
 
 Hver.addEventListener('mouseleave', back);
+
+/* Using the event.target we have set one event listener which target all the nested elements and changes the text when clicked. */
+
+let example = document.getElementById('Examples4');
+
+example.addEventListener('click', e => {
+    event.target.innerHTML = "TA-DA!";
+})
+

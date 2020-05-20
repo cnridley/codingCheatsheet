@@ -49,6 +49,7 @@
 
     <div id="hoverEx">Hover over me...</div>
 
+
     <div class="row container-fluid eventEx">
         In this above example, we have used the 'mouseenter' and 'mouseleave' method in order to create a hover effect. When hovered over we change the style to 'none' so that the div is not displayed. Then when the mouse leaves, the style is changed back to 'block' so that it re-appears. <br>
         <pre>
@@ -66,6 +67,30 @@
         Hver.addEventListener('mouseenter', change);
 
         Hver.addEventListener('mouseleave', back);
+        </pre>
+    </div>
+    
+    <div class="row" id="Examples4">
+        <div class="col-md-4 Ex4">
+        <p>event.target</p>
+        </div>
+        <div class="col-md-4 Ex4">
+        <p>example</p>
+        </div>
+        <div class="col-md-4 Ex4">
+        <p>for JS</p>
+        </div>
+    </div>
+    <div class="row container-fluid eventEx">
+    In the above example, we have used the event.target method so that we can set just one event listener on the outer div (id = Examples4), but still reach all 6 nested elements when they are clicked:<br>
+        <pre>
+        
+        let example = document.getElementById('Examples4');
+
+        example.addEventListener('click', e => {
+            event.target.innerHTML = "TA-DA!";
+                })
+
         </pre>
     </div>
 

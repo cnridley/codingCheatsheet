@@ -154,3 +154,12 @@ li {
     margin-top: 20px;
     padding: 30px;
 }
+
+.Ex4 {
+    background-color: palevioletred;
+    border: 3px solid red;
+    margin-bottom: 25px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}

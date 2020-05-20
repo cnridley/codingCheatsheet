@@ -59,11 +59,39 @@
       <td>Fires everytime mouse moves in element.</td>
     </tr>
       <tr>
-      <th scope="row">classList.remove(); </th>
-      <td>Removes a class value. </td>
+      <th scope="row">submit </th>
+      <td>Fires when a form is submitted.</td>
+    </tr>
+      <tr>
+      <th scope="row">focus</th>
+      <td>Fires when an element receives focus on a form.</td>
+    </tr>
+      <tr>
+      <th scope="row">blur</th>
+      <td>Fires when an element loses focus on a form.</td>
+    </tr>
+      <tr>
+      <th scope="row">keydown</th>
+      <td>When a key is pressed</td>
+    </tr>
+      <tr>
+      <th scope="row">keyup</th>
+      <td>When a key is released</td>
+    </tr>
+      <tr>
+      <th scope="row">keypress</th>
+      <td>Fires continuously when a key is pressed.</td>
     </tr>
   </tbody>
 </table><br><br>
+    Keyboard events such as keydown, keyup and keypress can contain keyboard properties to access more information about the action:<br>
+        1. keyCode - A number pertainining to a key. <br>
+        2. key - Represents a character name.<br>
+        3. code - Represents physical key being pressed.<br><br>
+        <p class="stringTitles">Event objects:</p>
+        The event object is often written as 'event' or 'e' and is passed through a listener function as a parameter, it has properties and methods that all events can access.<br><br>
+        event.target allows you to place an event listener on an outer element and it can still access the nested elements within that element.<br>
+        To see examples click on the link above.
     </div>
 
 <footer class="container-fluid">

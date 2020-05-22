@@ -116,6 +116,24 @@ img {
     font-family: 'Press Start 2P', cursive;
 }
 
+.JSONDiv {
+    width: 100%;
+    height: 150px;
+    background-color: coral;
+    text-align: center;
+    border: 5px solid black;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.DjangoDiv {
+    width: 100%;
+    height: 150px;
+    background-color: darkmagenta;
+    text-align: center;
+    border: 5px solid black;
+    font-family: 'Press Start 2P', cursive;
+}
+
 
 /* FOOTER */
 
@@ -999,3 +1017,46 @@ ul {
     padding-bottom: 5px;
     display: inline-block;
 }
+
+/* GIT */
+
+.GitPara {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+     display: inline-block;
+    border: 8px solid purple;
+    margin: 0;
+}
+
+/* JQUERY */
+
+.JqueryPara {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+     display: inline-block;
+    margin: 0;
+}
+
+#clkEx {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: yellow;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.modal {
+    display: hide;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    margin: auto;
+}
+

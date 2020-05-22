@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="index.html">GIT</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p></div>
+    <div class="row container-fluid GitPara">
+    Git is a distribution version control system that makes collaborative software projects more manageable. <br>
+    Most projects will have a git repository which makes sharing and contributing to code simple and effective. <br>
+    The repository (repo) is the main folder of a project, it contains all relevant project files and stores the revision history for each file. <br><br>
+
+    <p class="stringTitles">Forking a repository:</p><br>
+    On GitHub on the main page of the repo you will see a 'fork' button on the top right hand page, click this to fork. <br>
+    Once forked open up the terminal window to, and clone the repo to your text editor by using:<br><br>
+    git clone URL OF FORKED REPO<br><br>
+    <p class="stringTitles">Creating a new branch:</p><br>
+    The default branch for any project is the 'master branch' - anything on the master branch is deployable for others to use at anytime. <br>
+    When creating a new branch it is important to create your branch off the master branch.<br>
+    The branch name should also be descriptive.<br>
+    To create new branch open the terminal and put in the follow demands:<br><br>
+    git branch 'new-branch-name' - creates new branch<br><br>
+    git checkout 'new-branch-name' - switches to new branch<br><br>
+    git checkout -b 'new-branch-name- - combines the two above commands to create and switch to new branch at the same time <br><br>
+    git checkout master - switch back to master branch.<br><br>
+
+    <p class="stringTitles">Creating a new repository:</p>
+    Below are the step by step commands that need to be inputed into the terminal to create and add work to repositories (on the master branch):<br>
+
+    1. git init - To initialize the repository.<br>
+    2. git status - To see what needs to be staged in the repository.<br>
+    3. git add . - To add all the files to the staging section.<br>
+    4 git commit -m "commit message" - Commits all the files in the staging section to the repository. The message should be descriptive so that othe developers know what has been done. <br>
+    5. git remote add origin 'URL of repo' - Adds the URL of where the repository will be stored.<br>
+    6. git push -u origin master - Pushes all of the pages to a git branch i.e. GitHub.
+    </div>
+
+
+
+ <footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="images/icon.png"></a>
+
+        </div>
+    </footer>
+
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

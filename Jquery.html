@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="index.html">JQuery Cheatsheet</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p></div>
+
+    <p class="stringTitles">Write less, do more.</p>
+
+    <div class="row containerFluid JqueryPara">
+    JQuery is an external library which is used to help developers write less code in their script. It is another way of connecting to  the DOM to make sites interactive. Below will outline some of the useful Jquery information, to find our more click on the links in the footer!<br><br>
+        There are two ways to include Jquery within the code:<br>
+        The first method is to download a local copy and have it as a file within your code.<br>
+        The second method and more popular method is to link to a CDN within your script. The CDN is placed before you closing body tags. Your own personal JS file must be linked BELOW the CDN otherwise it will not work. <br>
+        You can find the CDN on google or on the Jquery website.<br><br>
+        The first bit of code written in Jquery will ALWAYS be the following and ALL Jquery code will be wrapped within it: <br>
+        <pre>
+        $(document).ready(function(){
+            ALL CUSTOM JQUERY GOES HERE!
+        });
+        </pre>
+        Jquery is called and represented by the '$'.<br>
+        A basic Jquery syntax would be:
+        <pre>
+        $("selector").method;
+        </pre>
+        Please note that double quotations are preferred when using Jquery. <br><br>
+        <p class="stringTitles">Selectors:</p>
+        Similarly to JS, we tell Jquery which elements we want to work on by using selectors, below are a few of the more common ones:
+        <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">SYNTAX</th>
+      <th scope="col">WHAT IT SELECTS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">$("*");</th>
+      <td>Every element on the page.</td>
+    </tr>
+    <tr>
+      <th scope="row">$("this");</th>
+      <td>Current element being operated on in a function.</td>
+    </tr>
+    <tr>
+      <th scope="row">$("p");</th>
+      <td>Selects all the tags of specified element</td>
+    </tr>
+    <tr>
+      <th scope="row">$(".class");</th>
+      <td>Class selector</td>
+    </tr>
+    <tr>
+      <th scope="row">$("#id");</th>
+      <td>ID selector</td>
+    </tr>
+       <tr>
+      <th scope="row">$("[type = 'text']");</th>
+      <td>Attribute selector. Selects any element with text applied to type attr. </td>
+    </tr>
+       <tr>
+      <th scope="row">$("p: first-of-type");</th>
+      <td>Selects first P tag.</td>
+    </tr>
+  </tbody>
+</table><br>
+        <p class="stringTitles">JQuery Events</p>
+        Events are what make the sites interactive. JQuery events are similar to the JS 'addEventListener' method but require less code.<br>
+        Using the same example in the 'JS examples events' page, we will change the background color using Jquery code and compare the length of the code to the JS equivalent.
+        <div id="clkEx">Click me to change the background colour!</div>
+        The Jquery code for this is:
+        <pre>
+        $(document).ready(function(){
+    $("#clkEx").click(function(){
+        $("#clkEx").css("backgroundColor", "orange");
+    });
+});
+        </pre>
+        The JS code for it was:
+        <pre>
+        let cEx = document.getElementById('clkEx');
+
+let changeBack = () => {
+    cEx.style.backgroundColor = 'orange';
+}
+
+cEx.addEventListener('click', changeBack);
+        </pre>
+        As you can see Jquery requires only two lines of code (if you remove the document.ready line) and does not require any new variables to be made, as opposed to the JS code which requires a new variable to be declared and a new function to be made.<br>
+        Some more popular JQuery events are:
+               <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">SYNTAX</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">click()</th>
+      <td>Executes when element is clicked once.</td>
+    </tr>
+    <tr>
+      <th scope="row">hover()</th>
+      <td>Executes when mouse is hovered over element.</td>
+    </tr>
+    <tr>
+      <th scope="row">submit()</th>
+      <td>Executes when form is submitted.</td>
+    </tr>
+    <tr>
+      <th scope="row">scroll()</th>
+      <td>Executes when screen is scrolled by user </td>
+    </tr>
+    <tr>
+      <th scope="row">keydown()</th>
+      <td>Executes when a key is pressed on the keyboard</td>
+    </tr>
+  </tbody>
+</table><br>
+        <p class="stringTitles">JQuery Effects</p>
+        Effects are used hand-in-hand with events to allow animations on the page. We use the Jquery events to listen for the users actions, we then use the Jquery effects to add more animation to the page. <br>
+        Below are some example of the most commonly used effects.<br>
+                      <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">SYNTAX</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">toggle()</th>
+      <td>Switches the visibility of an element between show and hide.</td>
+    </tr>
+    <tr>
+      <th scope="row">fadeToggle()</th>
+      <td>Switches the visibility of an element and animates the opacity.</td>
+    </tr>
+    <tr>
+      <th scope="row">slideToggle()</th>
+      <td>Switches the visibility of an element using a sliding effect.</td>
+    </tr>
+    <tr>
+      <th scope="row">animate()</th>
+      <td>Performs custom animation effects on the CSS of an element.</td>
+    </tr>
+  </tbody>
+</table><br>
+        The button below has a toggle effect applied to it, which toggles the display of the modal which appears. Below is all the css and Jquery code.
+        <pre>
+        .modal {
+    display: hide;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    margin: auto;
+}
+
+$("#modalTrigger").click(function(){
+        $(".modal").toggle();
+    });
+        </pre>
+        <div class="modal">Hope you like the example!</div>
+        <button id="modalTrigger">Click here!!</button><br><br>
+
+    </div>
+
+
+
+
+
+    <footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="images/icon.png"></a>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="JSscripts/Jquery.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

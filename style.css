@@ -1060,3 +1060,89 @@ ul {
     margin: auto;
 }
 
+/*API*/
+
+.apiPara {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    margin: 0;
+}
+
+.APItitle {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+    margin: 0;
+}
+
+
+.restAPI {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    border: 7px solid red;
+    margin: 0;
+}
+
+.curlAPI {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    border: 7px solid orange;
+    margin: 0;
+}
+
+.HTTPapi {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    border: 7px solid darkblue;
+    margin: 0;
+}
+
+.readyStateAPI {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    border: 7px solid gold;
+    margin: 0;
+}
+
+.AgainPara {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    border: 7px solid pink;
+    margin: 0;
+}
+
+.JSONpara {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    border: 7px solid darkblue;
+    margin: 0;
+}
+
+/* CONTACT */
+
+.contactPara {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    margin: 0;
+    background: lightyellow;
+}
+

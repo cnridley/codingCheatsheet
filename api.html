@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="index.html">API</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p></div>
+
+    <div class="row container-fluid apiPara">
+    <p class="stringTitles">API - APPLICATION PROGRAMMING INTERFACE</p>
+        An API is a set of rules that allow programmes to talk to each other. The developer creates the API on the server and it allows clients to talk to it.<br>
+        They are a technology that allow firms to interact and share information with other firms. <br>
+        There are three types of API:<br>
+        1. Private/Internal - Runs on an intranet within an organization.<br>
+        2. Partner API - Open beyond the organization. Not entirely exposed publicy and will retain some security and data control, however, it produces beneficial b2b relationships.<br>
+        3. Public API - Expose the same data that a company uses itself - offers something of value to those outside an organization. <br><br>
+    </div>
+     <div class="restAPI row container-fluid">
+        <p class="stringTitles">REST api</p>
+        REST stands for 'representational state transfer'. It determines what the API will look like. It is a set a rules that the developers follow when they create their API.<br>
+        One of the rules state that you should be able to get a piece of data (i.e. resource) when you link to a specific URL. <br>
+        Each URL is called a request while the data sent back is called a response.<br>
+        The request is made up of four things: <br><br>
+
+        <p class="APItitle">The Endpoint</p>
+        The endpoint is the URL you request for. Which is then made up of the following components:<br>
+        The ROOT ENDPOINT which is the starting point of the API you are requesting from.<br>
+        The PATH determines the resource you are requesting for. For each API you have to review the documentation to see what paths are available.<br>
+        The QUERY PARAMETERS give you the option to modify requests with key-value pairs. They always begin with a ? and are then seperated with an &.<br><br>
+
+        <p class="APItitle">The Method</p>
+        The method is the type of request you send to the server. There are five different types:<br>
+        GET - Used to get a resource from a server. When a GET request is used the server looks for the data requested and send it back to you. <br>
+        The GET request performs a READ operation. <br>
+        POST - Used to create a new resource on a server<br>
+        Performs a CREATE operation.<br>
+        PUT and PATCH - Used to update a resource on a server.<br>
+        Performs an UPDATE operation.<br>
+        DELETE - Used to delete a resource from a server.<br>
+        Perfroms a DELETE request. <br><br>
+
+
+        <p class="APItitle">The Headers</p>
+        Headers provide information to both the client and the server. HTTP headers are property value pairs that are seperated by a colon.<br><br>
+
+        <p class="APItitle">The Data</p>
+        The data is sometimes referred to as the 'body' or 'message', it contains information you want to be sent to the server. It is only used with the POST, PUT, PATCH and DELETE operations<br><br>
+    </div>
+
+    <div class="curlAPI row container-fluid">
+        <p class="stringTitles">cURL</p>
+        APIs are usually written in reference to cURL, which is an command line utitily. <br>
+        To make sure you have cURL downloaded, open the terminal and input:<br>
+        curl --version<br>
+        Once downloaded (if not already), input curl followed by the endpoint url you are requesting:<br>
+        curl 'url of endpoint'<br>
+        It will return all the HTML code for the particular URL, which we can then work with to receive what we need.<br><br>
+    </div>
+
+    <div class="HTTPapi row container-fluid">
+        <p class="stringTitles">HTTP status codes</p>
+        HTTP response status codes indicate whether a specific HTTP request has been successfully completed. In general, they follow the following rules:<br>
+        200+ - request has succeeded<br>
+        300+ - request is redirected to another URL.<br>
+        400+ - An error that originates from the client has occurred.<br>
+        500+ - An error that originates from the server has occurred.<br><br>
+
+        HTTP response status must equal 200 for it to work.<br><br>
+    </div>
+
+    <div class="readyStateAPI row container-fluid">
+        <p class="stringTitles">XMLHttp ready states</p>
+    When working with API, you will see the XMLHttpRequest.readyState();. This returns the state that the client is currently in. The XHR client exists in one of the following states:<br>
+        0 - unsent, client has been created. open() not called yet. <br>
+        1- opened, open() has been called.<br>
+        2 - headers received, send() has been called. Headers and status are available.<br>
+        3 - loading, downloading. repsonseText() holds partial data. <br>
+        4 - Done, operation is complete. <br><br>
+
+        For API to work, the ready state must equal 4. <br><br>
+    </div>
+
+    <div class="row container-fluid AgainPara">
+    With APIs, it is just a case of doing them again and again until they begin to make sense. All APIs will have documentation and usually a tutorial of how to use them. <br>
+    Within this website, I have used emailJS API for the suggestions page, below is all the JS code that was used:
+    <br><br>
+
+    </div>
+
+
+
+
+    <footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="images/icon.png"></a>
+
+        </div>
+    </footer>
+
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

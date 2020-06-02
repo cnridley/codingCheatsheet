@@ -1179,3 +1179,84 @@ ul {
     width: 25%;
     margin: 10px;
 }
+
+/* PYTHON */
+
+.pythonPara {
+    background-color: #cffffa;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+
+.dropdown a {
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.dropdown button {
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: black;
+}
+
+.dataTypes {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid purple;
+}
+
+/* PYTHON STRINGS */
+
+.PythonStringsPara {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #cffffa;
+}
+
+.PyStringConcat {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid purple;
+}
+
+.stringRep  {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid red;
+}
+
+.FormattingStrings {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid teal;
+}

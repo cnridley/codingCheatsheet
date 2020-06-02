@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="index.html">Python Cheatsheet</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    More Python Fun
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/PYTHON_PAGES/workingWithStrings.html">Working With Strings</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+
+    </div>
+
+    <div class="row container-fluid pythonPara">
+    Python is an extremely versatile, human readable and easy to comprehend programming language.<br>
+        Below are some of the basics you need to know about Python before starting, then click on the links in the drop down menu to go into more depth about each section. <br><br>
+
+        print() - A in-built Python function. Allows you to output information onto a console.<br>
+        i.e. The classic developer greeting:<br>
+        print("Hello World")<br>
+        => Hello World<br>
+        You should note that unlike JS, the semi-colon is not needed. <br><br>
+
+        To write a comment within the Python code you use the hash key (#), anything written after that will not be seen by the user, only by the developers. This is handy when working on a big project with many people adding to the project so that they know what the code is doing. <br><br>
+
+        Use the ... notation to code over multiple lines, as the curly brackets are not used when writing conditional statements in Python. <br>
+        Python also has an indenting convention of four whitespaces, if this is not used an error will occur in your code.<br><br>
+
+        When naming variables, a keyword is not needed i.e. var, let, const. Instead you name the variable and assign it to a value using the assigniment operator (=). When naming variables they should explain what the variable is used for, and two word variables should be seperated with an underscore (_). <br>
+        i.e. my_name = "Chloe"<br><br>
+
+    </div>
+
+    <div class="container-fluid row dataTypes">
+    <p class="stringTitles">Data Types</p>
+        Python uses different data types do determine what values can be applied to it and what you can do to it. It is important to be able to distinguish different data types so that you know what methods you can apply to it. <br><br>
+
+        1. NUMBERS:<br>
+        Any number entered into python will be interpreted as a number, which will then be determined as one of the following:<br>
+        Intergers (int) - This is any number written WITHOUT a decimal place. They can be both positive and negative numbers. <br>
+        Floating point numbers (float) - This is a number WITH a decimal place. They can be both positive and negative numbers. <br>
+        PLEASE NOTE - 3.0 is not the same as 3. Python will interpret 3.0 as a float and 3 as an int and treat them differently.<br><br>
+
+        2. BOOLEANS:<br>
+        Only two possible values; True or False. In order for it to be a boolean the capital 'T' and 'F' is needed.<br>
+        They are used to represent the truth values that are associated with the logical branch of mathematics.<br>
+        i.e 5>8 - False<br>
+        4=4 - True <br><br>
+        Booleans can also be stored in variables.<br>
+        <pre>
+        my_bool = 5>8
+        print(my_bool)
+        =>
+        False
+        </pre>
+
+        3. STRINGS:<br>
+        Anything written within either single of double quotations. It is important to be consistent in the choice of quotations used throughout the programme.<br>
+        e.g. my_string = "Lets learn Python"<br><br>
+
+        4. LISTS:<br>
+        A mutable(changeable) ordered sequence of elements, they can have values added, removed or replaced. Each element within a list is called an item. <br>
+        They are distinguished as a list by having square brackets []. <br>
+        The output will be exactly how we defined it, including brackets.
+        <pre>
+        my_list = ['orange', 'apple', 'pear', 'banana']
+
+        print('my_list')
+        =>['orange', 'apple', 'pear', 'banana']
+        </pre>
+
+
+        5. TUPLES:<br>
+        An unchangeable ordered sequence of elements, distinguished by using the ().<br>
+        The output will be exactly how we defined it, including brackets.
+        <pre>
+        my_tuple = ('you', 'cant', 'change', 'a', 'tuple')
+
+        print('my_tuple')
+        =>('you', 'cant', 'change', 'a', 'tuple')
+        </pre>
+
+
+
+        6. DICTIONARIES:<br>
+        Pythons built-in mapping type. Constructed with curly brackets ({}). They are made up of key-value pairs which can be called upon and changed. <br>
+        <pre>
+        my_dict = {'name':'Chloe', 'Gender':'Female', 'age':'27'}
+
+        print(my_dict['Gender'])
+        =>Female.
+        </pre>
+    </div>
+
+    <footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="images/icon.png"></a>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

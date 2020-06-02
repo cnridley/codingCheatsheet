@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="/python.html">Working With Strings</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+
+    <div class="container-fluid row PythonStringsPara">
+        Before beginning to learn about strings it is important to understand the difference between string values and string literals:<br>
+        A string literal is what you see in the source code of a computer program, including the quotation marks.<br>
+        A string value is what you see when the print() function is called, without the quotations marks.
+    </div>
+
+    <div class="container-fluid row PyStringConcat">
+    <p class="stringTitles">String Concatenation</p>
+    This is the joining of strings. <br>
+        To concatenate two strings together, you use the '+' operator. <br>
+        If a whitespace is needed, include a whitespace in one of the strings. <br>
+        <pre>
+        first_name = "Chloe "
+        last_name = "Ridley"
+        full_name = first_name + last_name
+        print("full_name")
+        =>
+        "Chloe Ridley"
+        </pre>
+        If no whitespace was included in the first_name variable, the result would have been ChloeRidley because Python would not have known to include a whitespace. <br>
+        When concatenating two or more strings together, Python is creating a new string that can be used throughout the programme.
+    </div>
+
+    <div class="row container-fluid stringRep">
+    <p class="stringTitles">String Replication</p>
+    In python you can repeat a string multiple times using the * operater:<br>
+        <pre>
+        name = "Chloe"
+        print(name * 3)
+        =>
+        ChloeChloeChloe
+        </pre>
+        As with concatenation, if you want spaces in the output, they need to be included in the original string.
+    </div>
+
+    <div class="row container-fluid FormattingStrings">
+    <p class="stringTitles">Formatting Strings</p>
+    Sometimes additional formatting is needed within a string to ensure string values are displayed as intended for the user. <br>
+    To span a string over multi-lines you can use either a triple single quotation or triple double quotations marks.
+        <pre>
+        '''
+        I am
+        a multi
+        line
+        string.
+        '''
+        </pre>
+
+        <pre>
+        """
+        I am also
+        a multi
+        line
+        string.
+        """
+        </pre>
+        Escape characters can also be used to help format strings, some of the most common are:
+        <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">NOTATION</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">\</th>
+      <td>Tells Python to treat the quotation following it as part of the string</td>
+    </tr>
+    <tr>
+      <th scope="row">\n</th>
+      <td>Starts a new line in the string.</td>
+    </tr>
+      <tr>
+      <th scope="row">\t</th>
+      <td>Indents the line in the string.</td>
+    </tr>
+
+  </tbody>
+</table><br>
+        Escape characters work well for short strings, but for longer strings the multi-line technique is preferred.<br>
+        Sometimes the quotation marks or backslashes are needed in the string literal, this is where raw formatting can be used. This tell python to ignore all the formatting within a string and include all escape characters.<br><br>
+
+        <pre>
+        str = r"hello\how\'are\you\m'k"
+
+        print(str) => hello\how\'are\you\m'k
+        </pre>
+    </div>
+
+
+
+    <footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/icon.png"></a>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

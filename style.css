@@ -1260,3 +1260,37 @@ ul {
     display: inline-block;
     border: 10px solid teal;
 }
+
+.PyStringFunctions {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid gold;
+}
+
+.func {
+    color: red;
+    display: none;
+}
+
+#join {
+    color: red;
+    display: none;
+}
+
+.PyIndexStrings {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid lightblue;
+}
+
+

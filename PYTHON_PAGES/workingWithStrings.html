@@ -105,6 +105,183 @@
         </pre>
     </div>
 
+    <div class="row container-fluid PyStringFunctions">
+    <p class="stringTitles">String Functions</p>
+        Built-in Python functions allow us to easily modify and manipulate strings. <br>
+        You should note that strings are a immutable data type, meaning the returned string will be a new string, not the old one modified.<br><br>
+
+        Two common functions are:<br>
+        str.upper() - This converts all to upper case. <br>
+        str.lower() - This converts all to lower case.<br>
+        These two functions are useful when data is being inputed by a user which is then later evaluated by someone. Because Python is case sensitive, it allows all the data to be converted to lower or upper, so that other functions can be used on it and the evaluation is more accurate. <br><br>
+
+        Python also has string functions that evaluate to a Boolean value:<br>
+        <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">FUNCTION</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">str.isalnum() </th>
+      <td>True is only alphanumeric values. No symbols</td>
+    </tr>
+    <tr>
+      <th scope="row">str.isalpha() </th>
+      <td>True if only letters. No symbols</td>
+    </tr>
+      <tr>
+      <th scope="row">str.islower() </th>
+      <td>True if letters are all lower case</td>
+    </tr>
+      <tr>
+      <th scope="row">str.isnumeric() </th>
+      <td>True if consists of only numbers.</td>
+    </tr>
+      <tr>
+      <th scope="row">str.isspace() </th>
+      <td>True if only whitespace characters</td>
+    </tr>
+      <tr>
+      <th scope="row">str.istitle() </th>
+      <td>True if string is in title case</td>
+    </tr>
+      <tr>
+      <th scope="row">str.isupper() </th>
+      <td>True if letters are all upper case.</td>
+    </tr>
+
+  </tbody>
+</table><br>
+        Below is a string example, which has had all the functions applied to it. See if you get them right and then click the button to see the answers. <br>
+
+        my_string = "Hello How Are You Today" <br><br>
+
+        print(my_string.isalnum()) <span class="func">False</span><br>
+        print(my_string.isalpha()) <span class="func">False</span><br>
+        print(my_string.islower()) <span class="func">False</span><br>
+        print(my_string.isnumeric()) <span class="func">False</span><br>
+        print(my_string.isspace()) <span class="func">False</span><br>
+        print(my_string.istitle()) <span class="func">True</span><br>
+        print(my_string.isupper()) <span class="func">False</span><br><br>
+
+        <button id="functionTrigger">Click here!!</button><br><br>
+
+        Boolean methods are useful when you want to check whether something a user enters fits the parameters. <br><br>
+
+        The length method returns the number of characters in a string. This include all whitespaces, symbols, numbers and letters. <br>
+        It can be useful to check password parameters.<br>
+        <pre>
+        my_length_string = "Hello my name is Chloe Ridley"
+
+        print(len(my_length_string)) => 29
+        </pre>
+        The str.join() method joins two strings together, in a way that passes one string through another.
+        Click the string to see the results:<br><br>
+
+        <span id="joinTrigger">
+        my_length_string = "Hello my name is Chloe Ridley"<br>
+
+        print("*".join(my_length_string))</span><br><br>
+
+        <span id="join">H*e*l*l*o* *m*y* *n*a*m*e* *i*s* *C*h*l*o*e* *R*i*d*l*e*y</span><br><br>
+        The str.join() method is also useful to combine a list of strings into a new single string: <br>
+        print(", ".join(['bike','hike','ski','swim']))<br>
+        =><br>
+        bike, hike, ski, swim<br><br>
+
+        The str.split() method returns a list of strings that are seperated by whitespace if no parameters are given. It can also be used to remove parts of the string.<br><br>
+
+        my_string = "hello my name is chloe"<br>
+
+        print(my_string.split())<br>
+        =><br>
+        ['hello', 'my', 'name', 'is', 'chloe']<br><br>
+
+        print(my_string.split("e"))<br>
+        =><br>
+        ['h', 'llo my nam', ' is chlo', '']<br><br>
+
+        The str.replace() method takes an original string and returns an updated string with some replacement. It takes two arguments, the first is the part of the string being replaced, the second is the replacement.<br><br>
+        replace_string = "Good morning"<br>
+
+        print(replace_string.replace("morning", "evening"))<br>
+        =><br>
+        Good evening<br> <br>
+
+        The str.count() method counts the number of times a particular character or a sequence of characters show up in a string. It is case sensitive, which is where .upper and .lower methods come in handy. <br><br>
+
+        count_example = "He said Hello, she said Hello, everybody said Hello"<br><br>
+        print(count_example.count("a")) <br>
+        =><br>
+        3<br><br>
+        print(count_example.count("Hello"))<br>
+        => <br>
+        3<br><br>
+        print(count_example.count("hello"))<br>
+        =><br>
+        0<br><br>
+
+        The str.find() method returns the postion of a character based on index number. If there is more than one it will return the postion of the first one.<br><br>
+        count_example = "He said Hello, she said Hello, everybody said Hello"<br><br>
+        print(count_example.find("a")) <br>
+        =><br>
+        4<br><br>
+        print(count_example.find("Hello")) <br>
+        =><br>
+        8<br><br>
+    </div>
+
+    <div class="row container-fluid PyIndexStrings">
+    <p class="stringTitles">Indexing strings</p>
+        Each character in a string corresponds to an index number, the first character being 0. Indexing strings allows us to manipulate and access strings within data. <br><br>
+       Ie. In the string "hello World!", the 'h' would be index 0, the whitespace would be index 5 and the '!' would be 11. <br><br>
+        Strings can also be indexed with negative numbers, this is useful when you need to access a character towards the end in a very long string. It starts at -1.<br><br>
+        I.e in "hello World!", the '!' would be -1, the 'W' would be -6.<br><br>
+        To access characters in a string using index numbers you used the square brackets.<br><br>
+        my_string = "hello world!"<br>
+        print(my_string[2])<br>
+        =><br>
+        l<br><br>
+        print(my_string[-6])<br>
+        =><br>
+        w<br><br>
+
+        <p class=stringTitles>Slicing strings.</p>
+        You can take a 'slice' out of a string with the slice method.<br>
+        It uses the syntax [x:y], where x is inclusive and y is exclusive. <br><br>
+        my_string = "hello world!"<br>
+        print(my_string[0:5])<br>
+        =><br>
+        hello<br><br>
+        If you only want to include either ends of the string you omit one of the numbers in the [x:y] syntax. i.e. <br><br>
+        my_string = "hello world!"<br>
+        print(my_string[:5])<br>
+        =><br>
+        hello<br><br>
+        my_string = "hello world!"<br>
+        print(my_string[6:])<br>
+        =><br>
+        world!<br><br>
+        <p class="stringTitles">Stride in strings</p>
+        Slicing strings can take a third parameter; the stride.<br>
+        This is the number of characters Python moves forwards once the first character is received. <br>
+        The default number is 1. <br><br>
+        my_string = "hello world!"<br>
+        print(my_string[0:12:2])<br>
+        =><br>
+        hlowrd<br>
+        This is because it skips every other character. <br><br>
+        If you put;<br>
+        my_string = "hello world!"<br>
+        print(my_string[::-1])<br>
+        =><br>
+        !dlrow olleh<br>
+        It reverses the order of the string.
+    </div>
+
 
 
     <footer class="container-fluid">
@@ -131,6 +308,7 @@
 
 
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="../JSscripts/workingWIthStrings.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>

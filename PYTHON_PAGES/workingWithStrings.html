@@ -282,6 +282,81 @@
         It reverses the order of the string.
     </div>
 
+    <div class="row container-fluid stringFormatters">
+    <p class="stringTitles">String Formatters</p>
+        Formatters work by allowing you to put placeholders {} into a string and call the str.format() method later with a value to fill the placeholder.<br>
+
+        <pre>
+        my_string = "Chloe enjoys {}"
+        print(my_string.format("biking"))
+        =>
+        Chloe enjoys biking
+        </pre>
+        You can put more than one argument in the parantheses of the format method. By default Python fills curly braces in the order of the arguments.<br>
+        However, they are indexed in the same way that strings are, giving us more choices on how to modify the string.<br>
+        <pre>
+        my_string = "Learning is {1}, especially {0}."
+        print(my_string.format("fun", "Python"))
+        =>
+        Learning is fun, especially Python.
+        </pre>
+        If it is a long placeholder value, you can asign it a keyword argument:<br>
+        <pre>
+        my_string = "{0} the {1} developed a {in}."
+        print(my_string.format("Chloe", "web developer", in="interactive website"))
+        =>
+        Chloe the web developer developed a interactive website.
+        </pre>
+
+        When passing through a value in the {}, you can also use the {field_name:conversion}
+        syntax.<br>
+        The field_name tells Python the index number of the value in the str.format.<br>
+        The conversion tells Python the conversion code of the data type that we are using within the formatter. To find out more about the conversion types visit the offical documents of Python, but some of the most common ones are:<br>
+        s - string <br>
+        d - decimal place (10-base)<br>
+        f - floats with decimal place.<br>
+        <pre>
+        my_money = "Chloe had {1:f} in her {0}"
+        print(my_money.format("bank", 18.79))
+        =>
+        Chloe had 18.790000 in her bank.
+        </pre>
+        Because we have used the 'f' conversion type, Python returns a float number, but as you can see there are too many decimal places. You can declare how many decimal place you want by doing the following.
+        <pre>
+        print("Chloe had {1:.2f} in her {0}".format("bank", 18.79))
+        =>
+        Chloe had 18.79 in her bank.
+        </pre>
+        By defining .2f in the placeholder, Python only puts two decimal places.<br>
+        If 0 decimal places are wanted use .0f<br><br>
+
+        Variables can also be passed through formatters.
+        <pre>
+        cake = 2
+        bday = "Chloe has {} cakes for her birthday!"
+        print(bday.format(cake))
+        =>
+        Chloe has 2 cakes for her birthday!
+        </pre>
+        With formatters you can also add padding to the placeholder by adding a number to the right of the : <br>
+        > will align right <br>
+        ^ will align center <br>
+        The less than symbol will align left.
+        <pre>
+        my_string = "Chloe {0:>6} to {1:^16}"
+        print(my_string.format("loves", "code"))
+        =>
+        Chloe  loves to       code
+        </pre>
+        By default, Python will use whitespace unles otherwise stated.
+        <pre>
+        my_string = "{:*^20s}"
+        print(my_string.format("Chloe"))
+        =>
+        *******Chloe********
+        </pre>
+    </div>
+
 
 
     <footer class="container-fluid">

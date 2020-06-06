@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="/python.html">Converting Data Types</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+
+    <div class="row container-fluid ConvertingPython">
+    Different data types are sometimes converted into other data types in order to manipulate values in different ways.<br>
+    For example, if you tried to add a string with a number you would receive an error, therefore you need to convert either the string to a number(if possible) or the number to a string before concatenating them. <br>
+    You also can't modify a tuple, so therefore would have to convert it to a list beforehand and then modify it accordingly. <br>
+    </div>
+
+    <div class="row container-fluid convertingNumbers">
+    <p class="stringTitles">Converting Number Types</p>
+
+    To convert from int to float:<br>
+        Use the float() method. <br>
+        <pre>
+        my_int = 67
+        print(float(my_int))
+        =>
+        67.0
+        </pre>
+        To convert from float to int:<br>
+        Use the int() method.<br>
+        <pre>
+        my_float = 6219.792
+        print(int(my_float))
+        =>
+        6219
+        </pre>
+        When converting from a float to an int, Python does not do any rounding, it simply just cuts off the decimal point.
+    </div>
+
+    <div class="row container-fluid numbersToStrings">
+    <p class="stringTitles">Converting Numbers to Strings</p>
+    Use the str() method. This is useful because in Python you can not concatenate numbers and strings together, it would return an error. i.e
+        <pre>
+        name = "chloe"
+        age = 27
+        birthday = "Happy Birthday" + name + " you are " + age + "today!"
+        </pre>
+        That would return an error, instead you would have to convert the age to a string:
+        <pre>
+        birthday = "Happy Birthday" + name + " you are " + str(age) + "today!"
+        </pre>
+        You would use the exact same method for floats!
+    </div>
+
+    <div class="row container-fluid stringsToNumbers">
+    <p class="stringTitles">Converting Strings to Numbers</p>
+        Strings can be converted to numbers using the int() and float() method as outlined above.<br>
+        This is useful when we need to apply mathematical operations on numerical data that has been inputted as a string. Using the + operator has a differnt output when used on two strings:
+        <pre>
+        num1 = "5"
+        num2 = "6"
+        print(num1 + num2)
+        =>
+        56
+        </pre>
+        This is probably not the output the user wanted, which is why we convert to a number type first:
+        <pre>
+        print(int(num1) + int(num2))
+        =>
+        11
+        </pre>
+        You can also not use the '-' operator on a string as it would return an error, which is another example of when you would need to convert to a number first.
+    </div>
+
+    <div class="row container-fluid listToTuple">
+    <p class="stringTitles">Converting to a tuple</p>
+    Use the tuple() method.<br>
+        Converting to a tuple can allow substantial optimization to program we create. It also tells any other developers that you have no intention of changing the values of the items in the tuple.
+        <pre>
+        my_list = ['giant', 'evil', 'liv']
+        print(tuple(my_list)
+        =>
+        ('giant', 'evil', 'liv')
+        </pre>
+        Any iterable data type can be converted to a tuple (int and floats cannot be converted)
+        <pre>
+        name = "Chloe"
+        print(tuple(name))
+        =>
+        ('C','h','l','o','e')
+        </pre>
+    </div>
+
+    <div class="row container-fluid toLists">
+    <p class="stringTitles">Converting To Lists</p>
+    Use the list() method. <br>
+        Useful when you need a mutable data type. <br>
+        For example, when you have a tuple which needs to be modified.
+        <pre>
+        my_tuple = ('giant', 'evil', 'liv')
+        print(list(my_tuple))
+        =>
+        ['giant', 'evil', 'liv']
+        </pre>
+        This can then be modified and then changed back into a tuple if needed. <br>
+        Any iterable data type can be converted to a tuple (int and floats cannot be converted)
+        <pre>
+        name = "Chloe"
+        print(list(name))
+        =>
+        ['C','h','l','o','e']
+        </pre>
+    </div>
+
+
+    <footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/icon.png"></a>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="../JSscripts/workingWIthStrings.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

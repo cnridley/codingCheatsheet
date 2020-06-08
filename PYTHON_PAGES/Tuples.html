@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="/python.html">Python Tuples</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+
+    <div class="container-fluid row Tuples">
+    Python tuples are an immutable data type, meaning they cannot be changed. When you use a tuple you are conveying to others that you don't intend any changes to the data. <br><br>
+        Tuples are defined using the ()<br>
+        The following is an example of a tuple, which will be used throughout this page.
+        <pre>
+        my_tuple = ('liv', 'norco', 'felt')
+        </pre>
+        If you needed to modify a tuple, you would have to convert to a list first.
+    </div>
+
+    <div class="row container-fluid IndexingTuples">
+    <p class="stringTitles">Indexing Tuples</p>
+    Tuples are indexed in the same way as lists. Indexing starts at 0 i.e 'liv' = 0.<br>
+        However, with a long tuple you can index it negatively to access items towards the end of the list, when doing this it always starts with -1. i.e. 'felt' = -1.<br><br>
+
+        To access items using index numbers you use the [].
+        <pre>
+        print(my_tuple[1])
+        =>
+        norco
+        print(my_tuple[-3])
+        =>
+        liv
+        </pre>
+    </div>
+
+    <div class="row container-fluid ConcatTuples">
+    <p class="stringTitles">Concatenating Tuples</p>
+        You can concatenate tuples two different ways:<br>
+        The first is concatenating a string with a tuple item using the + operator:
+        <pre>
+        print("Chloe rides a " + my_tuple[0])
+        =>
+        Chloe rides a liv
+        </pre>
+        The second way is using the + operator to concatenate two tuples together to make a new tuple.
+        <pre>
+        my_tuple = ('liv', 'norco', 'felt')
+        brands = ('fox', 'poc', 'dakine')
+
+        print(my_tuple + brands)
+        =>
+        ('liv', 'norco', 'felt', 'fox', 'poc', 'dakine')
+        </pre>
+    </div>
+
+    <div class="row container-fluid SlicingTuples">
+    <p class="stringTitles">Slicing and Striding Tuples</p>
+    Slicing allows us to call multiple items using the [x:y] syntax, where x is inclusive and y is exclusive.
+        <pre>
+        tuple = ('liv', 'norco', 'felt', 'fox', 'poc', 'dakine')
+        print(tuple[2:4])
+        =>
+        ('felt', 'fox')
+        </pre>
+        If you only wanted to print one end of the tuple, omit either the x or y from the syntax.
+        <pre>
+        tuple = ('liv', 'norco', 'felt', 'fox', 'poc', 'dakine')
+        print(tuple[:4])
+        =>
+        ('liv', 'norco', 'felt', 'fox')
+
+        print(tuple[3:])
+        =>
+        ('fox', 'poc', 'dakine')
+        </pre>
+        The stride is the optional third parameter, it defines how many items to move forward each time. The default is 1. The syntax for this is [x:y:z]
+        <pre>
+        tuple = ('liv', 'norco', 'felt', 'fox', 'poc', 'dakine')
+        print(tuple[1:5:2])
+        =>
+        ('norco', 'fox')
+        </pre>
+        If you just wanted to skip an item each time you could do the following:
+        <pre>
+        tuple = ('liv', 'norco', 'felt', 'fox', 'poc', 'dakine')
+        print(tuple[::2])
+        =>
+        ('liv', 'felt', 'poc')
+        </pre>
+    </div>
+
+    <div class="row container-fluid tupleFunction">
+    <p class="stringTitles">Tuple Function</p>
+    Python has built in functions to tell us information about the Tuple:
+                  <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">FUNCTION</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">len()</th>
+      <td>Tells us how many items in a Tuple.</td>
+    </tr>
+    <tr>
+      <th scope="row">max()</th>
+      <td>Find highest value in Tuple.</td>
+    </tr>
+    <tr>
+      <th scope="row">min()</th>
+      <td>Finds lowest value in Tuple.</td>
+    </tr>
+  </tbody>
+</table><br>
+        The min and max function are useful to help find information about quantitative data. E.g. test scores, temperature or prices.<br><br>
+        As well as these functions you can also multiply tuples together using the * operator.
+        This is useful if you needed two copies of all files in the directory.
+        <pre>
+        print(my_tuple*2)
+        =>
+        ('liv', 'norco', 'felt', 'liv', 'norco', 'felt')
+        </pre>
+    </div>
+
+    <footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/icon.png"></a>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="../JSscripts/pythonBoolean.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

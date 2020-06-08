@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="/python.html">Python Booleans</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+
+    <div class="container-fluid row BooleanPy">
+    Booleans are a data type that can only evaluate to True or False, always with a capital T and F. They are used to make comparsions and control the flow of a program.
+    </div>
+
+    <div class="container-fluid row comparisonOps">
+    <p class="stringTitles">Comparison Operators</p>
+    Comparison operators can be used for int, floats and strings. They are used to compare values and evaluate to a Boolean value.<br>
+        Common operators are:<br>
+         <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">OPERATOR</th>
+      <th scope="col">WHAT IT MEANS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"> == </th>
+      <td>Equal to</td>
+    </tr>
+    <tr>
+      <th scope="row">!=</th>
+      <td>Not equal to</td>
+    </tr>
+      <tr>
+      <th scope="row"><</th>
+      <td>Less than</td>
+    </tr>
+      <tr>
+      <th scope="row">></th>
+      <td>Greater than</td>
+    </tr>
+      <tr>
+      <th scope="row"> <= </th>
+      <td>Less than or equal to </td>
+    </tr>
+      <tr>
+      <th scope="row">>=</th>
+      <td>Greater than or equal to</td>
+    </tr>
+  </tbody>
+</table><br>
+
+        Python also has logical operators: <br>
+         <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">OPERATOR</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"> and </th>
+      <td>True if both are true</td>
+    </tr>
+    <tr>
+      <th scope="row">or</th>
+      <td>True if at least one is true</td>
+    </tr>
+      <tr>
+      <th scope="row">not</th>
+      <td>True only if false</td>
+      </tr>
+  </tbody>
+</table><br>
+        Below are some examples, click the button to see if you got the answers correct. <br><br>
+        "hello" == "Hello <span class="Ops">False</span><br>
+        720 > 602 <span class="Ops">True</span><br>
+        "PythonOperators" != "pythonOperators" <span class="Ops">True</span><br>
+        5 > 3 or 7 > 10 <span class="Ops">True</span><br>
+        not 27 > 30  <span class="Ops">True</span><br>
+        4.20 == 4.20 and 6.0 == 6 <span class="Ops">False</span><br><br>
+
+        <button id="OpsTrigger">Click here!!</button><br><br>
+
+    </div>
+
+    <div class="row container-fluid TruthTables">
+    <p class="stringTitles">Truth Tables</p>
+        Truth tables help to improve algorithmic thinking when programming: <br><br>
+        == TRUTH TABLE:
+        <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">X</th>
+      <th scope="col">==</th>
+        <th scope="col">Y</th>
+         <th scope="col">RESULT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">True</th>
+      <td>==</td>
+        <td>True</td>
+        <td>True</td>
+    </tr>
+    <tr>
+      <th scope="row">True</th>
+      <td>==</td>
+        <td>False</td>
+        <td>False</td>
+    </tr>
+      <tr>
+      <th scope="row">False</th>
+      <td>==</td>
+          <td>True</td>
+          <td>False</td>
+      </tr>
+      <tr>
+      <th scope="row">False</th>
+      <td>==</td>
+          <td>False</td>
+          <td>True</td>
+      </tr>
+  </tbody>
+</table><br>
+
+        AND TRUTH TABLE:
+        <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">X</th>
+      <th scope="col">AND</th>
+        <th scope="col">Y</th>
+         <th scope="col">RESULT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">True</th>
+      <td>AND</td>
+        <td>True</td>
+        <td>True</td>
+    </tr>
+    <tr>
+      <th scope="row">True</th>
+      <td>AND</td>
+        <td>False</td>
+        <td>False</td>
+    </tr>
+      <tr>
+      <th scope="row">False</th>
+      <td>AND</td>
+          <td>True</td>
+          <td>False</td>
+      </tr>
+      <tr>
+      <th scope="row">False</th>
+      <td>AND</td>
+          <td>False</td>
+          <td>FALSE</td>
+      </tr>
+  </tbody>
+</table><br>
+
+        OR TRUTH TABLE:
+        <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">X</th>
+      <th scope="col">OR</th>
+        <th scope="col">Y</th>
+         <th scope="col">RESULT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">True</th>
+      <td>or</td>
+        <td>True</td>
+        <td>True</td>
+    </tr>
+    <tr>
+      <th scope="row">True</th>
+      <td>or</td>
+        <td>False</td>
+        <td>True</td>
+    </tr>
+      <tr>
+      <th scope="row">False</th>
+      <td>or</td>
+          <td>True</td>
+          <td>True</td>
+      </tr>
+      <tr>
+      <th scope="row">False</th>
+      <td>or</td>
+          <td>False</td>
+          <td>False</td>
+      </tr>
+  </tbody>
+</table><br>
+
+        NOT TRUTH TABLE:
+        <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">NOT</th>
+      <th scope="col">X</th>
+        <th scope="col">RETURNS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Not</th>
+      <td>True</td>
+        <td>False</td>
+    </tr>
+    <tr>
+      <th scope="row">Not</th>
+      <td>False</td>
+        <td>True</td>
+
+    </tr>
+  </tbody>
+</table><br>
+    </div>
+
+    <div class="row container-fluid Booleans">
+    <p class="stringTitles">Using Boolean operators to control flow</p>
+    To control the flow of a program we can use a condition followed by a clause i.e. <br>
+
+        If 'x' is true do this:<br><br>
+
+        An example of this would be when grading someones paper.
+
+        <pre>
+        grade = 81
+
+        if grade >= 80:
+        print("You passed!")
+        else:
+        print("Better luck next time!")
+        </pre>
+
+        Because the grade = 81, the program would have printed "You Passed!"
+
+    </div>
+
+    <footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/icon.png"></a>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="../JSscripts/pythonBoolean.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

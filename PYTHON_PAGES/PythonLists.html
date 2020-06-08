@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="/python.html">Python Lists</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+
+    <div class="container-fluid row PyLists">
+    Lists are useful when you want to work with many related values as it enables you to keep data together, condense your code an perform the same methods and operations on multiple values at once. <br>
+
+        They are a mutable data type and are defined using the [].<br><br>
+
+    The following list will be used for all the examples on this page:
+        <pre>
+        my_list = ['bike', 'hike', 'ski', 'run', 'swim']
+        </pre>
+    </div>
+
+    <div class="row container-fluid listIndexing">
+    <p class="stringTitles">List Indexing</p>
+        Every item in a list has its own index number. Indexing a list always starts at 0.<br>
+        i.e. 'bike' would have an index of 0 and 'run' would have an index of 3.<br><br>
+
+        When you have a long list and need to access an item towards the end of the list, you can index your list from negative numbers. When using negative numbers, indexing always starts with -1.<br>
+        i.e. 'swim' would be -1 and 'bike' would be -5. <br><br>
+        We are able to access and manipulate our lists through the index numbers.
+        <pre>
+        print(my_list[2])
+        =>
+        ski
+
+        print(my_list[-2])
+        =>
+        run
+        </pre>
+        Using list indexing you are able to concatenate with strings using the + operator.
+        <pre>
+        print("Chloe likes to " + my_list[0] +".")
+        =>
+        Chloe likes to bike.
+        </pre>
+
+        You can also modify list items by using the index numbers and then assigning it to a new value using the = operator.
+        <pre>
+        my_list[2] = "Walk"
+        print(my_list)
+        =>
+        ['bike', 'hike', 'Walk', 'run', 'swim']
+        </pre>
+        As you can see 'ski' has been replaced with 'walk' because we assigned it a new value, this allows us to change and update lists in an effcient way.<br><br>
+
+        Slicing a list means you can call multiple list items using the [x:y] syntax.<br>
+        The x is inclusive and the y is exclusive to the result.
+        <pre>
+        print(my_list[1:4])
+        =>
+        ['hike', 'ski', 'run']
+        </pre>
+
+        Using the index numbers you can also delete items from the list using the del keyword.
+        You can either delete one item or a range of items using the [x:y] syntax, x is inclusive, y is exclusive.
+        <pre>
+        del my_list[2]
+        print(my_list)
+        =>
+        ['bike', 'hike', 'run', 'swim']
+
+        del my_list[1:4]
+        print(my_list)
+        =>
+        ['bike', 'swim']
+        </pre>
+    </div>
+
+    <div class="row container-fluid listMethods">
+    <p class="stringTitles">List Methods</p>
+    Something you should note before learning list methods is that when applying a list method to a list you are affecting a list itself, not a copy. It is useful to make a copy of the orginal list just in case! <br><br>
+
+           <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">METHOD</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">list.append(x) </th>
+      <td>Will add 'x' as an item to the end of the list.</td>
+    </tr>
+    <tr>
+      <th scope="row">list.insert(i, x)</th>
+      <td>Add 'x' to index position 'i'</td>
+    </tr>
+      <tr>
+      <th scope="row">list.extend(L)</th>
+      <td>L is a second list</td>
+    </tr>
+      <tr>
+      <th scope="row">list.remove(x)</th>
+      <td>Removes 'x'. If multiple x's, the first is removed</td>
+    </tr>
+      <tr>
+      <th scope="row">list.pop([i])</th>
+      <td>Return the item at i and then remove item.</td>
+    </tr>
+      <tr>
+      <th scope="row">list.index(x)</th>
+      <td>Returns index number of x. If multiple x's, returns first one.</td>
+    </tr>
+      <tr>
+      <th scope="row">list.copy()</th>
+      <td>Copies list</td>
+    </tr>
+      <tr>
+      <th scope="row">list.reverse()</th>
+      <td>Reverses order of list.</td>
+    </tr>
+      <tr>
+      <th scope="row">list.count(x)</th>
+      <td>Returns the number of times x occurs</td>
+    </tr>
+      <tr>
+      <th scope="row">list.sort()</th>
+      <td>Sorts items in a list. Useful to sort numbers</td>
+    </tr>
+      <tr>
+      <th scope="row">list.clear()</th>
+      <td>Removes all items in a list. </td>
+    </tr>
+
+  </tbody>
+</table><br>
+        As well as modifying lists using methods, you can also modifying lists using operators:<br>
+        Using the + operator you can either concatenate two list together or add a list item to the end of the list.<br>
+        <pre>
+        print(my_list + ['walk'])
+        =>
+        ['bike', 'hike', 'ski', 'run', 'swim', 'walk']
+
+        my_list = ['bike', 'hike', 'ski', 'run', 'swim']
+
+        my_second_list = ['coffee', 'tea', 'water']
+
+        print(my_list + my_second_list)
+        =>
+        ['bike', 'hike', 'ski', 'run', 'swim', 'coffee', 'tea', 'water']
+        </pre>
+
+        Using the * operator, you can multiply lists:
+        <pre>
+        print(my_list * 3)
+        =>
+        ['bike', 'hike', 'ski', 'run', 'swim', 'bike', 'hike', 'ski', 'run', 'swim', 'bike', 'hike', 'ski', 'run', 'swim']
+        </pre>
+    </div>
+
+    <div class="row container-fluid nestedLists">
+    <p class="stringTitles">Nested Lists</p>
+    A nested list is a list within a list.<br><br>
+        my_nested_list = [['chloe', 'nicole', 'grace], ['George', 'Andrew', 'Ty']]<br><br>
+
+        To access items within a nested list you need two indices.<br>
+        my_nested_list[0][1] => nicole<br>
+        my_nested_list[1][0] => George<br><br>
+    </div>
+
+    <div class="row container-fluid listComp">
+    <p class="stringTitles">List Comprehensions</p>
+    List comprehensions offer a way to create lists based on existing lists. They provide an alternative syntax to creating lists and other sequential data types.<br><br>
+    They are constructed as:<br>
+        list_variable = [x for x in iterable]<br><br>
+
+    <pre>
+    chloe_letters = [letter for letter in 'Chloe']
+    print(chloe_letters)
+    =>
+    ['C', 'h', 'l', 'o', 'e']
+    </pre>
+
+    chloe_letters is now a new list created using a list comprehension, with each letter being a new item.<br>
+
+    Within list comprehensions, it is only the 'for' and 'in' that are keywords. I.e the following would give the same result.
+    <pre>
+    chloe_letters = [cupOfTea for cupOfTea in 'Chloe']
+    print(chloe_letters)
+    =>
+    ['C', 'h', 'l', 'o', 'e']
+    </pre>
+    Not that you would ever use 'cupOfTea' but it is just an example!  <br><br>
+
+    The above example is using a string data type to create a new list, you can also do the same with tuples and lists:
+        <pre>
+        tuple_example = [item for item in ('hello', 'bonjour', 'hola')]
+        print(tuple_example)
+        =>
+        ['hello', 'bonjour', 'hola']
+
+        list_example = [item for item in ['bye', 'cya', 'adios']]
+        print(list_example)
+        =>
+        ['bye', 'cya', 'adios']
+        </pre>
+        List comprehensions can be re-written as for loops but not every for loop can be written as a list comprhension. We will write the chloe_letter example as a for loop.
+        <pre>
+        chloe_letters = []
+
+        for letter in 'chloe':
+        chloe_letters.append(letter)
+        print(chloe_letters)
+        =>
+        ['c', 'h', 'l', 'o', 'e']
+        </pre>
+        As with before, in a for loop it is only the 'for' and 'in' that are keywords. The following would give the same result:
+        <pre>
+        chloe_letters = []
+
+        for cupOfTea in 'chloe':
+        chloe_letters.append(cupOfTea)
+        print(chloe_letters)
+        =>
+        ['c', 'h', 'l', 'o', 'e']
+        </pre>
+
+        <p class="stringTitles">Conditionals With List Comprehensions</p>
+        Conditional statements can be used to control which items in an existings sequence are included in the new list. Below are two examples with an explanation of what is happening:
+
+        <pre>
+        chloe_letters = [letter for letter in 'Chloe' if letter != 'e']
+        print(chloe_letters)
+        =>
+        ['C', 'h', 'l', 'o']
+        </pre>
+        In this example, we have a list comprehension which will create a new list, which each item will be a letter in the string 'chloe', but then have added an if statement to say only add to the new list if the item does not equal 'e'. Hence why 'e' has been left of the end.
+
+        <pre>
+        numbers_list = [y*3 for y in range(20) if y%3 == 0]
+        print(numbers_list)
+        =>
+        [0, 9, 18, 27, 36, 45, 54]
+        </pre>
+        In this example Python would have gone through the following steps:<br>
+        'y in range(20)' - Would have returned numbers 0-19<br>
+        'y%3 == 0' - Would have checked if numbers 0-19 returned 0 when divided by 3.<br> 0, 3, 6, 9, 12, 15, 18 <br>
+        'y*3' - Would have multiplied the above results to the power of 3 to get the final output.<br>
+        <p class="stringTitles">Nested Loops In List Comprehensions</p>
+        A nested list comprehension would look like:
+        <pre>
+        my_list = [x*y for x in [20, 40, 60] for y in [1, 2, 3]]
+        print(my_list)
+        =>
+        [20, 40, 60, 40, 80, 120, 60, 120, 180]
+        </pre>
+
+        As a for loop that would be written as the following:
+        <pre>
+        my_list = []
+        for x in [20, 40, 60]:
+            for y in [1, 2, 3]:
+            my_list.append(x*y)
+        print(my_list)
+        =>
+        [20, 40, 60, 40, 80, 120, 60, 120, 180]
+        </pre>
+
+        You should note that although list comprehensions flatten the code ino one line, it is important to remember that code readibility is more important, therefore loops are sometimes preferred so that it is more user friendly.
+    </div>
+
+
+
+    <footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/icon.png"></a>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="../JSscripts/pythonBoolean.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

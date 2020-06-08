@@ -1371,3 +1371,198 @@ ul {
     border: 10px solid gold;
 }
 
+/* PYTHON MATH */
+
+.pythonMath {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #cffffa;
+}
+
+.PyMathOps {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid gold;
+}
+
+.mathFunctions {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid red;
+}
+
+/* Boolean Python */
+
+.BooleanPy {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #cffffa;
+}
+
+.comparisonOps {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid red;
+}
+
+.Ops {
+    color: red;
+    display: none;
+}
+
+.TruthTables {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid gold;
+}
+
+.Booleans {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid hotpink;
+}
+
+/* PYTHON LISTS */
+
+.PyLists {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #cffffa;
+}
+
+.listIndexing {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid hotpink;
+}
+
+.listMethods {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid gold;
+}
+
+.nestedLists {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid blue;
+}
+
+.listComp {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid red;
+}
+
+/* TUPLES */
+
+.Tuples {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #cffffa;
+}
+
+.IndexingTuples {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid red;
+}
+
+.ConcatTuples {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid blue;
+}
+
+.SlicingTuples {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid hotpink;
+}
+
+.tupleFunction {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 10px solid gold;
+}

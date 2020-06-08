@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="/python.html">Python Math</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+
+    <div class="container-fluid row pythonMath">
+    Being able to effectively perform math in programming is an important skill because of how frequently you'll be working with numbers.<br>
+
+    When using the operators in Python in a long equation, there is an opertor precedence, to remember it, the acronym BEMDAS is used: <br><br>
+        Brackets<br>
+        Exponents<br>
+        Multiply<br>
+        Divide<br>
+        Add<br>
+        Subtract<br>
+    </div>
+
+    <div class="row container-fluid PyMathOps">
+    <p class="stringTitles">Python Math Operators</p>
+        The most commonly used math opertors are:
+        <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">OPERATOR</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">x + y </th>
+      <td>Addition</td>
+    </tr>
+    <tr>
+      <th scope="row">x - y </th>
+      <td>Subtraction</td>
+    </tr>
+      <tr>
+      <th scope="row">x * y </th>
+      <td>Multiplication</td>
+    </tr>
+      <tr>
+      <th scope="row">x / y </th>
+      <td>Division</td>
+    </tr>
+      <tr>
+      <th scope="row">x % y </th>
+      <td>Modulo. Returns remainder of x divided by y </td>
+    </tr>
+      <tr>
+      <th scope="row">x // y</th>
+      <td>Floor division. Returns an int</td>
+    </tr>
+      <tr>
+      <th scope="row">-x</th>
+      <td>Negates x </td>
+    </tr>
+      <tr>
+      <th scope="row">x**</th>
+      <td>To the power of </td>
+    </tr>
+
+  </tbody>
+</table><br>
+
+    Python also uses compound operators:
+                <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">OPERATOR</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">x +=  </th>
+      <td>Adds then assigns</td>
+    </tr>
+    <tr>
+      <th scope="row">x -=</th>
+      <td>Subtracts then assigns</td>
+    </tr>
+      <tr>
+      <th scope="row">x *= </th>
+      <td>Multiplies then assigns</td>
+    </tr>
+      <tr>
+      <th scope="row">x /= </th>
+      <td>Divides then assigns</td>
+    </tr>
+      <tr>
+      <th scope="row">x %= </th>
+      <td>Modulo then assign </td>
+    </tr>
+      <tr>
+      <th scope="row">x //=</th>
+      <td>Floor division then assign</td>
+    </tr>
+      <tr>
+      <th scope="row">x**=</th>
+      <td>To the power of then assign</td>
+    </tr>
+
+  </tbody>
+</table><br>
+    </div>
+
+    <div class="row container-fluid mathFunctions">
+        <p class="stringTitles">Built-in Math Functions</p>
+    Python has a number of built in math functions, to help speed up programming and help the developer to write less code. <br><br>
+
+    abs() - This finds the absolute values, it does not take into account any negative values.<br>
+        i.e abs(-19) => 19<br><br>
+        This is useful for problems including distance travelled etc. <br>
+        E.g. If you needed to travel 100km to a destination, but have accidently travelled 150km, if you calculated how many km you have to travel to the destination, it would give a negative number. This is where abs() can be used to help!
+        <pre>
+        km_to_dest = 100
+        km_travelled = 150
+        km-left = km_to_dest - km-travelled
+        print(km-left)
+        =>
+        -50
+        print(abs(km-left))
+        =>
+        50
+        </pre>
+        You are most likely to use abs() in Python when there is a possibility of result being negative or postive but you only want a postive value.
+        <br><br>
+
+        divmod() - This function takes two values, which can be either int or floats. It finds the floor quotient and remainder in one function.<br>
+        i.e divmod(a, b) = a//b and a%b combined into one function.
+        <pre>
+        divmod(20, 6)
+        =>
+        (3, 2)
+        </pre>
+
+        pow() - provides an alternative to the ** syntax and allows more arguments to be passed. As well as variables to be passed into the argument, whereas you can not use the ** with variable names
+        <pre>
+        num = 7
+        print(pow(num, 2))
+        =>
+        49
+        </pre>
+
+        round() - This method takes two arguments. The first is the number to be rounded and the second is to how many decimal places.
+        <pre>
+        i = 18.14683280273
+        print(round(i, 2))
+        =>
+        18.15
+        </pre>
+
+        sum() - This method is used to find the sum of numeric compound data types, including lists, tuples and dictionaries. It can take up to two arguments
+        <pre>
+        i = [1, 2, 3]
+        print(sum(i, 5))
+        =>
+        11
+        </pre>
+
+    </div>
+
+
+
+
+    <footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/icon.png"></a>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="../JSscripts/workingWIthStrings.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

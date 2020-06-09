@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Cheatsheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container-fluid header"><p class="heading"><a href="/python.html">Python Dictionaries</a> <span class="chloe"><i>By Chloe</i> <a href = "https://github.com/cnridley" target = "_blank"><i class="fa fa-github githubImg"></i></a></span></p>
+    </div>
+
+    <div class="row container-fluid PyDict">
+    Dictionaries are Pythons built-in mapping type. They are used to hold data that are related to each other.
+        Dictionaries are defined using the {}, and made up of key-value pairs which are separated by : <br><br>
+        Below is an example of a Python Dictionary, we will use this example throughout this page:
+        <pre>
+        profile = {'name':'Chloe', 'gender':'female', 'age': 27, 'citizen':'UK'}
+        </pre>
+    </div>
+
+    <div class="row container-fluid modifyingDict">
+    <p class="stringTitles">Accessing and Modifying Python Dictionaries</p>
+    To access values items in a dictionary you can use the [].
+    <pre>
+    print(profile['name])
+    =>
+    Chloe
+    </pre>
+    To add a key-value pair to a dictionary, you use the syntax dict_name['key'] = value. As Dictionaries are unordered, when added they can appear anywhere in the dictionary.
+   <pre>
+   profile['hobby'] = 'biking'
+   print(profile)
+   =>
+   {'name': 'Chloe', 'gender': 'female', 'age': 27, 'citizen': 'UK', 'hobby': 'biking'}
+   </pre>
+    Similarly, to update existing key value pairs use the syntax dict_name['existing-key'] = new value.
+        <pre>
+        profile['name'] = 'George'
+        print(profile)
+        =>
+        {'name': 'George', 'gender': 'female', 'age': 27, 'citizen': 'UK'}
+        </pre>
+
+        When deleting from a dictionary, there are a couple of methods you can do:<br><br>
+        del dict_name[key] - This will delete the key-value pair stated in [].<br>
+        dict_name.clear() - This will clear the entire dictionary but keep the empty dictionary.<br>
+        del dict_name - This will delete the entire dictionary.
+    </div>
+
+    <div class="row container-fluid dictFunctions">
+    <p class="stringTitles">Dictionary Function</p>
+    <table class="table container text-center">
+  <thead>
+    <tr>
+      <th scope="col">FUNCTION</th>
+      <th scope="col">WHAT IT DOES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">dict_name.keys()</th>
+      <td>Returns all the keys in list format</td>
+    </tr>
+    <tr>
+      <th scope="row">dict_name.values()</th>
+      <td>Returns all the values in list format</td>
+    </tr>
+      <tr>
+      <th scope="row">dict_name.items()</th>
+      <td>Returns all the values in a list format</td>
+    </tr>
+  </tbody>
+</table><br>
+        <pre>
+        profile.keys()
+        =>
+        dict_keys(['name', 'gender', 'age', 'citizen'])
+
+        profile.values()
+        =>
+        dict_values(['Chloe', 'female', 27, 'UK'])
+
+        profile.items()
+        =>
+        dict_items([('name', 'Chloe'), ('gender', 'female'), ('age', 27), ('citizen', 'UK')])
+        </pre>
+
+        You can also use a for loop to make list more user friendly and readable.<br>
+        NOTE that if you have a number data type as one of the values, you have to use the str() method.
+        <pre>
+        profile = {'name':'Chloe', 'gender':'female', 'age': 27, 'citizen':'UK'}
+
+        for key, value in profile.items():
+        print(key +' is the key for the value ' + str(value))
+
+        =>
+        name is the key for the value Chloe
+        gender is the key for the value female
+        age is the key for the value 27
+        citizen is the key for the value UK
+        </pre>
+    </div>
+
+
+
+    <footer class="container-fluid">
+        <div class="row"><p class="footerP">Useful external links:</p></div>
+
+        <div class="external">
+            <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_Bootstrap_4923030.png"></a>
+
+            <a href="https://developer.mozilla.org/en-US/" target="_blank"><img class="externalLinkImg" src="../images/iconfinder_mozilla_4691385.png"></a>
+
+            <a href="https://jquery.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/iconfinder_jQuery_194922.png"></a>
+
+            <a href="https://www.w3schools.com/" target="_blank"><img class="externalLinkImg"
+            src="../images/icon.png"></a>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="../JSscripts/workingWIthStrings.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
